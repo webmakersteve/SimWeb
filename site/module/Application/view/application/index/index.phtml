@@ -1,0 +1,17 @@
+<div class="jumbotron">
+    <h1>Results for <?php echo $toon; ?> of <?php echo $realm; ?></h1>
+    <img src="<?php echo $thumb; ?>">
+    <form action="?" method="post">
+        <div class="form-group">
+            <label for="Link">Link</label>
+            <input type="text" class="form-control" id="Link" name="Link" placeholder="Enter link" value="<?php echo $link; ?>">
+        </div>
+    <p><button type="submit" class="btn btn-success btn-lg">Check &raquo;</button></p>
+    </form>
+</div>
+
+<div class="container">
+	<div>YOU DID AN AWESOME <?php print $dps ?> DPS! Pretty good for a <?php print $gender ?></div>
+    <h2>Simulation Response</h2>
+    <pre><code><?php echo $data; ?></code></pre>
+</div>
