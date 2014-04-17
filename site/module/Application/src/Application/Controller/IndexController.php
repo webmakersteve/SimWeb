@@ -15,39 +15,42 @@ use Zend\View\Model\ViewModel;
 
 use Application\Service\Simulator as SimCraft;
 
-use Application\Model\Character;
-use Application\Model\SimConfig;
+use Application\Model\Character\Character;
+use Application\Model\Simcraft\Config as SimConfig;
 
 class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-		$sim = new SimCraft();
-		$link = $this->getRequest()->getPost('Link',  "http://us.battle.net/wow/en/character/wyrmrest-accord/Chaositi/simple" );
+		$realms = array(
+				'Maelstrom',
+				'Wyrmrest Accord',
+				'Ragnaros',
+				'Hyjal'
+			);
 		
-		$post = $link;
-		$char = new Character();
+		$link = $this->getRequest()->getPost('Opt',  FALSE );
 		
-		try {
-			$char->Import( $link );	
-		} catch (Exception $e) {
+		if ($link) {
+			$region = $this->getRequest()->getPost('Char-Region',  'us' );
+			$realm = $this->getRequest()->getPost('Char-Realm',  FALSE );
+			$name = $this->getRequest()->getPost('Char-Name',  FALSE );
 				
+			if (!$realm || !$name) {} else
+				
+			$this->redirect()->toRoute('simulate', array(
+				'region' => strtolower($region),
+				'realm' => strtolower($realm),
+				'name' => strtolower($name)
+			));
 		}
-		$c = new SimConfig();
-		$c->importCharacter( $char );
-		
-		$data = $sim->simulateCharacter( $char );
 			
+		$viewData = array(
+			'realms' => $realms,
+			'regions' => array("US", "CN", "EU", "KR" , "TW" )
+		);
+		return new ViewModel($viewData);
 		
-			
-        return new ViewModel(array(
-			'toon' => $char->getName(),
-			'realm' => $char->getRealm(),
-			'thumb' => $char->getThumbnail(),
-			'link' => $post,
-			'data' => print_r($data, true),
-			'gender' => $char->getGender(),
-			'dps' => (int) $data['Player']['DPS']['value']
-		));
     }
+	
 }

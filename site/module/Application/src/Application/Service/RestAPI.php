@@ -14,11 +14,12 @@ class RestAPI {
 	
 	private function setCurlOpts( $opts = NULL ) {
 		$defaults = array(
-			CURLOPT_RETURNTRANSFER => TRUE,
 			CURLOPT_SSL_VERIFYPEER => FALSE,
 			CURLOPT_URL => "http://google.com"
 		);
 		foreach( $opts as $k=>$v ) $defaults[$k] = $v;
+		$defaults[ CURLOPT_HEADER ] = 1;
+		$defaults[CURLOPT_RETURNTRANSFER] = TRUE;
 		curl_setopt_array( $this->curl, $defaults );
 	}
 	
@@ -29,12 +30,44 @@ class RestAPI {
 		if (curl_error($ch)) {
 			throw new RestAPIError( curl_error($ch) );	
 		}
-		return $data;
+		
+		$size = curl_getinfo( $ch, CURLINFO_HEADER_SIZE );
+		$header = substr( $data, 0, $size );
+		$body = substr( $data, $size );
+		
+		$headers = explode("\r\n", $header);
+		
+		return array($this->understandHeaders($headers), $body);
 	}
 	
-	protected function close() {
+	private function close() {
 		curl_close( $this->curl );
 		$this->curl = NULL;	
+	}
+	
+	private function understandHeaders( $headers ) {
+		
+		//get the status code and remove it from the regularly formatted headers
+		$status = $headers[0];
+		unset($headers[0]);
+		//now iterate through teh array creating a new one of key value pairs
+		$array = array();
+		$array['Status'] = $status;
+		
+		preg_match( "#^HTTP.?/(?P<HTTPVERSION>\d[.]\d) *(?P<STATUSCODE>\d+)#i", $status, $matches );
+		//get status code out of here
+		if ($matches['STATUSCODE']) $array['Status-Code'] = $matches['STATUSCODE']; else $array['Status-Code'] = 200;
+		if ($matches['HTTPVERSION']) $array['HTTP-Version'] = $matches['HTTPVERSION'];
+		
+		foreach( $headers as $header ) {
+			$h = explode(":", $header, 2);
+			if (count($h) < 2) {
+				//invalid header?
+			} else $array[trim($h[0])] = trim($h[1]);
+		}
+		
+		return $array;
+		
 	}
 	
 	protected function RESTGet( $URL ) {
@@ -42,13 +75,13 @@ class RestAPI {
 		$this->setCurlOpts(array(
 			CURLOPT_URL => $URL
 		));
-		try {
-			$data = $this->execute();
-			$this->close();
-		} catch (RestAPIError $e) {
-			echo $e->getMessage();
+		//let extensions handle exception handling
+		list($headers, $data) = $this->execute();
+		if ($headers['Status-Code'] == 404) {
+			throw new RestAPIError('404 for URL ', 404);	
 		}
-		
+			
+		$this->close();
 		return $this->format($data);
 			
 	}
@@ -62,6 +95,12 @@ class RestAPI {
 			//xml
 			return $this->XMLFormatter($data);
 		} else return $data;
+	}
+	
+	protected function Headers() {
+		
+		
+			
 	}
 	
 	

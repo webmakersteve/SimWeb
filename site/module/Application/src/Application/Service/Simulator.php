@@ -6,7 +6,7 @@ use Zend\ServiceManager\ServiceLocatorAwareInterface,
 	Zend\ServiceManager\ServiceLocatorInterface;
 	
 	
-use Application\Model\Character;
+use Application\Model\Character\Character;
 
 function logr( $in, $die=false ) {
 	printf("<pre>%s</pre>", print_r( $in, true ));	

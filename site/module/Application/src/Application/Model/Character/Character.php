@@ -1,10 +1,10 @@
 <?php
 
-namespace Application\Model;
+namespace Application\Model\Character;
  
-use Application\Service\Armory;
-use Application\Model\Item;
-use Application\Model\Specialization;
+use Application\Service\BlizzAPI;
+use Application\Model\Item\Item;
+use Application\Model\Character\Specialization;
  
 class Character {
 	
@@ -58,22 +58,34 @@ class Character {
 		return $this;
 	}
 	
-	public function Import( $URL ) {
-		$this->URL = $URL;
-		$armory = new Armory();
+	public function Fetch(  ) {
+		$armory = new BlizzAPI();
 		try {
-			$CharData = $armory->Get( $URL );
+			if ($this->URL) $CharData = $armory->getCharacter( $this->URL );
+			else $CharData = $armory->getCharacter( $this->realm, $this->name );
 			return $this->exchangeArray($CharData);
-		} catch (Exception $e) {
-				
+		} catch (\Exception $e) {
+			throw $e;
 		}
 		
 	}
 	
 	public function getLink() {return $this->URL; }
+	public function setLink( $s ) {$this->URL = $s; }
+	
 	
 	private static $races = array(
-		1 => "Human"
+		1 => "Human",
+		2 => "Orc",
+//		3 => "Dwarf",
+//		4 => "Gnome",
+		5 => "Undead",
+		6 => "Tauren",
+//		7 => "Draenei",
+		8 => "Troll",
+		9 => "Goblin",
+		10 => "Blood Elf",
+		26 => "Pandaren",
 	);
 	
 	private static $genders = array(
@@ -126,10 +138,17 @@ class Character {
 	public function getRace() {return self::$races[$this->race];}
 	public function setRace($race) {
 		$race = strtolower($race);
-		if (in_array($race, self::$races)) $this->race = array_search( $race );}
+		if (in_array($race, self::$races)) $this->race = array_search( $race );
+	}
+	
+	public function getFaction() {
+			
+	}
 	
 	public function getLevel() {return $this->level;}
 	public function setLevel($level) {$this->level = $level;}
+	
+	
 	
 	public function getGender( $n = FALSE ) {
 		if ($n) return $this->gender;

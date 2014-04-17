@@ -1,6 +1,8 @@
 <?php
 
-namespace Application\Model;
+namespace Application\Model\Item;
+
+use Application\Model\Common\Stat;
  
 class Item {
 	

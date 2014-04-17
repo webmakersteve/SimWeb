@@ -1,17 +1,22 @@
 <div class="jumbotron">
-    <h1>Results for <?php echo $toon; ?> of <?php echo $realm; ?></h1>
-    <img src="<?php echo $thumb; ?>">
+    <h1>Simulate your character!</h1>
     <form action="?" method="post">
+    	<input type="hidden" name="Opt" value="TRUE">
         <div class="form-group">
-            <label for="Link">Link</label>
-            <input type="text" class="form-control" id="Link" name="Link" placeholder="Enter link" value="<?php echo $link; ?>">
+            <select name="Char-Region" id="Char-Region">
+            <?php foreach( $regions as $name ): ?>
+            <option value="<?php echo $name; ?>"><?php echo $name;?></option>
+            <?php endforeach; ?>
+            </select>
+            <select name="Char-Realm" id="Char-Realm">
+            	<option>--Choose a Realm--</option>
+            <?php foreach( $realms as $name ): ?>
+            <option value="<?php echo $name; ?>"><?php echo $name;?></option>
+            <?php endforeach; ?>
+            </select>
+            <input type="text" class="form-control" id="Char-Name" name="Char-Name" placeholder="Character Name" value="">
         </div>
     <p><button type="submit" class="btn btn-success btn-lg">Check &raquo;</button></p>
     </form>
 </div>
 
-<div class="container">
-	<div>YOU DID AN AWESOME <?php print $dps ?> DPS! Pretty good for a <?php print $gender ?></div>
-    <h2>Simulation Response</h2>
-    <pre><code><?php echo $data; ?></code></pre>
-</div>

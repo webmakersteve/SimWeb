@@ -1,10 +1,10 @@
 <?php
 
-namespace Application\Model;
+namespace Application\Model\Simcraft;
 
-use Application\Model\Character;
+use Application\Model\Character\Character;
 
-class SimConfig {
+class Config {
 	
 	protected $character;
 	

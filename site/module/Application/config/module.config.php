@@ -20,6 +20,23 @@ return array(
                     ),
                 ),
             ),
+			
+			'simulate' => array(
+				'type'    => 'segment',
+				'options' => array(
+					'route'       => '/simulate[/:region][/:realm][/:name]',
+					'constraints' => array(
+						'region' => '[a-zA-Z]{2,4}',
+						'realm' => '[a-zA-Z][a-zA-Z0-9_-]*',
+						'name' => '[a-zA-Z]+',
+					),
+					'defaults' => array(
+						'controller' => 'Application\Controller\Simulate',
+						'action'     => 'index',
+					),
+				)
+			), // end 'events' route
+			
             // The following is a route to simplify getting started creating
             // new controllers and actions without needing to create a new
             // module. Simply drop new controllers in, and you can access them
@@ -73,7 +90,8 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'Application\Controller\Index' => 'Application\Controller\IndexController'
+            'Application\Controller\Index' => 'Application\Controller\IndexController',
+			'Application\Controller\Simulate' => 'Application\Controller\SimulateController'
         ),
     ),
     'view_manager' => array(
