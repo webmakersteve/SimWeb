@@ -1,0 +1,12 @@
+<div class="jumbotron">
+    <h1><img src="<?php echo $thumb; ?>"> Results for <?php echo $toon; ?> of <?php echo $realm; ?></h1>
+    <a href="<?php echo $this->url('home'); ?>">Go Back</a>
+</div>
+
+<div class="container">
+	<div>YOU DID AN AWESOME <?php print $dps ?> DPS! Pretty good for a<?php echo preg_match("#^[aeiou]#i", $race) ? "n" : ""?> <?php print $race ?></div>
+    <h2>Config</h2>
+    <pre><code><?php echo $config; ?></code></pre>
+    <h2>Simulation Response</h2>
+    <pre><code><?php echo $data; ?></code></pre>
+</div>

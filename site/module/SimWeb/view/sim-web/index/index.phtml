@@ -1,0 +1,23 @@
+<div class="jumbotron">
+    <h1>Simulate your character!</h1>
+    <form action="?" method="post">
+    	<?php if (isset($error)) printf("<p>%s</p>", $error); ?>
+    	<input type="hidden" name="Opt" value="TRUE">
+        <div class="form-group">
+            <select name="Char-Region" id="Char-Region">
+            <?php foreach( $regions as $name ): ?>
+            <option value="<?php echo $this->nicify($name); ?>"><?php echo $name;?></option>
+            <?php endforeach; ?>
+            </select>
+            <select name="Char-Realm" id="Char-Realm">
+            	<option>--Choose a Realm--</option>
+            <?php foreach( $realms as $slug => $name ): ?>
+            <option value="<?php echo $slug ?>"><?php echo $name;?></option>
+            <?php endforeach; ?>
+            </select>
+            <input type="text" class="form-control" id="Char-Name" name="Char-Name" placeholder="Character Name" value="">
+        </div>
+    <p><button type="submit" class="btn btn-success btn-lg">Check &raquo;</button></p>
+    </form>
+</div>
+

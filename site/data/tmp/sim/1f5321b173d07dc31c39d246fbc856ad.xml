@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<simulationcraft major_version="530" minor_version="6" wow_version="5.3.0" ptr="false" wow_build="17116">
+  <config>
+    <style>not-specified</style>
+    <has_scale_factors>false</has_scale_factors>
+    <report_pets_separately>false</report_pets_separately>
+    <report_details>true</report_details>
+    <report_targets>true</report_targets>
+    <report_raw_abilities>true</report_raw_abilities>
+    <normalize_scale_factors>false</normalize_scale_factors>
+  </config>
+  <summary>
+    <timestamp>Thu Apr 17 17:33:05 2014
+</timestamp>
+    <iterations>1000</iterations>
+    <threads>1</threads>
+    <confidence>95</confidence>
+    <simulation_length mean="450" total="449595"/>
+    <events processed="3761765" max_remaining="36"/>
+    <fight_style>Patchwerk</fight_style>
+    <elapsed_cpu_sec>0.874</elapsed_cpu_sec>
+    <lag type="world" value="100" stddev="10"/>
+    <lag type="queue" value="37" stddev="9"/>
+    <charts max_players_per_chart="20">
+      <chart type="dps" img_src="http://1.chart.apis.google.com/chart?cht=bhg&amp;chf=bg,s,333333&amp;chtt=DPS Ranking&amp;chts=dddddd,18&amp;chs=550x40&amp;chbh=15&amp;chd=t:1995&amp;chds=0,4987&amp;chco=FFFFFF&amp;chm=t++1995++Chaosity,FFFFFF,0,0,15&amp;"/>
+      <chart type="hps" img_src="http://2.chart.apis.google.com/chart?cht=bhg&amp;chf=bg,s,333333&amp;chtt=HPS Ranking&amp;chts=dddddd,18&amp;chs=550x40&amp;chbh=15&amp;chd=t:97704&amp;chds=0,244259&amp;chco=FFFFFF&amp;chm=t++97704++Chaosity,FFFFFF,0,0,15&amp;"/>
+      <chart type="gear" img_src="http://4.chart.apis.google.com/chart?cht=bhs&amp;chf=bg,s,333333&amp;chtt=Gear Overview&amp;chts=dddddd,18&amp;chs=550x140&amp;chxs=0,FFFFFF&amp;chbh=15&amp;chd=t:0,0|0,0|12929,0|9028,0|6141,0|0,0|0,0|0,0|3071,0|2303,0|5143,0|14256,0|0,0|0,0&amp;chds=0,52871&amp;chco=C79C6E,ABD473,69CCF0,8A8A8A,9482C9,FFF569,C5DDD4,C41F3B,F58CBA,0070DE,FFF569,FFFFFF,00FF96,009090&amp;chxt=y&amp;chxl=0:|Chaosity|Healing%20Target&amp;chdl=Str|Agi|Int|Spi|SP|AP|Exp|Hit|Crit|Haste|Mastery|Armor|Dodge|Parry&amp;chdlp=t&amp;chdls=dddddd,12&amp;"/>
+      <chart type="dpet" img_src="http://3.chart.apis.google.com/chart?chs=500x110&amp;cht=bhg&amp;chf=bg,s,333333&amp;chbh=10&amp;chd=t:101046|76842|75840|65913|36937|28442&amp;chds=0,252615&amp;chco=FFE57F,FFE57F,FFE57F,FFE57F,FFE57F,FFE57F&amp;chm=t++101046++power_word_shield+(Chaosity),FFFFFF,0,0,10|t++76842++greater_heal+(Chaosity),FFFFFF,1,0,10|t++75840++penance_heal+(Chaosity),FFFFFF,2,0,10|t++65913++flash_heal+(Chaosity),FFFFFF,3,0,10|t++36937++renew+(Chaosity),FFFFFF,4,0,10|t++28442++heal+(Chaosity),FFFFFF,5,0,10&amp;chtt=Raid Damage Per Execute Time&amp;chts=dddddd,18&amp;"/>
+    </charts>
+    <dmg total="898577" dps="1995"/>
+    <heal total="43932195" hps="97704"/>
+    <player_by_dps>
+      <player name="Chaosity" index="0" dps="1994.907"/>
+      <player name="Healing Target" index="1" dps="0"/>
+    </player_by_dps>
+    <player_by_hps>
+      <player name="Chaosity" index="0" hps="97703.768"/>
+      <player name="Healing Target" index="1" hps="0"/>
+    </player_by_hps>
+  </summary>
+  <players>
+    <player name="Chaosity">
+      <type>Player</type>
+      <level>90</level>
+      <race>blood_elf</race>
+      <class type="priest"/>
+      <specialization>discipline</specialization>
+      <primary_role>heal</primary_role>
+      <position>back</position>
+      <dps value="1994.907" effective="1994.907" error="18.544" range="912.759" convergence="0.610"/>
+      <dpr value="0" rps_loss="4612.011" rps_gain="4046.497" resource="mana"/>
+      <waiting_time pct="0.749"/>
+      <active_time pct="100"/>
+      <apm>32.683</apm>
+      <origin>http://us.battle.net/wow/en/character/maelstrom/chaosity/advanced</origin>
+      <talents_url>http://us.battle.net/wow/en/tool/talent-calculator#Xa!100111</talents_url>
+      <attribute name="strength" base="45" gear="45" buffed="47"/>
+      <attribute name="agility" base="60" gear="60" buffed="63"/>
+      <attribute name="stamina" base="18226" gear="18226" buffed="20049"/>
+      <attribute name="intellect" base="13795" gear="13149" buffed="15918"/>
+      <attribute name="spirit" base="9242" gear="9242" buffed="9242"/>
+      <attribute name="mastery_value" base="0" gear="5143" buffed="0"/>
+      <attribute name="spellpower" base="20926" gear="7141" buffed="27659"/>
+      <attribute name="spellhit" base="15" gear="0" buffed="15"/>
+      <attribute name="spellcrit" base="12" gear="3071" buffed="18"/>
+      <attribute name="spellhaste" base="5" gear="2303" buffed="11"/>
+      <attribute name="spellspeed" base="5" gear="2303" buffed="11"/>
+      <attribute name="manareg_per_second" base="2243" gear="0" buffed="2243"/>
+      <attribute name="attackpower" base="35" gear="0" buffed="41"/>
+      <attribute name="attackhit" base="0" gear="0" buffed="0"/>
+      <attribute name="attackcrit" base="8" gear="3071" buffed="13"/>
+      <attribute name="expertise" base="0" gear="0" buffed="0"/>
+      <attribute name="expertise_oh" base="0" gear="0" buffed="0"/>
+      <attribute name="attackhaste" base="5" gear="2303" buffed="5"/>
+      <attribute name="attackspeed" base="5" gear="2303" buffed="16"/>
+      <attribute name="armor" base="14256" gear="14256" buffed="22809"/>
+      <attribute name="miss" base="0" gear="0" buffed="0"/>
+      <attribute name="dodge" base="0" gear="0" buffed="0"/>
+      <attribute name="parry" base="0" gear="0" buffed="0"/>
+      <attribute name="block" base="0" gear="0" buffed="0"/>
+      <attribute name="tank_crit" base="0" gear="0" buffed="0"/>
+      <resource name="health" base="401567" buffed="47"/>
+      <resource name="mana" base="300000" buffed="300000"/>
+      <glyphs>
+        <glyph name="prayer_of_mending"/>
+        <glyph name="penance"/>
+        <glyph name="weakened_soul"/>
+        <glyph name="borrowed_time"/>
+        <glyph name="confession"/>
+        <glyph name="holy_resurrection"/>
+      </glyphs>
+      <priorities>
+        <action index="0" list="precombat" value="flask,type=warm_sun"/>
+        <action index="1" list="precombat" value="food,type=mogu_fish_stew"/>
+        <action index="2" list="precombat" value="power_word_fortitude,if=!aura.stamina.up"/>
+        <action index="3" list="precombat" value="inner_fire"/>
+        <action index="4" list="precombat" value="snapshot_stats" comment="Snapshot raid buffed stats before combat begins and pre-potting is done."/>
+        <action index="5" list="precombat" value="jade_serpent_potion"/>
+        <action index="6" value="mana_potion,if=mana.pct&lt;=75&amp;cooldown.hymn_of_hope.remains"/>
+        <action index="7" value="arcane_torrent,if=mana.pct&lt;95"/>
+        <action index="8" value="mindbender,if=talent.mindbender.enabled"/>
+        <action index="9" value="shadowfiend,if=!talent.mindbender.enabled&amp;(mana.pct&lt;45|(mana.pct&lt;70&amp;cooldown.hymn_of_hope.remains&gt;60))"/>
+        <action index="10" value="hymn_of_hope,if=mana.pct&lt;60&amp;(pet.mindbender.active|pet.shadowfiend.active)"/>
+        <action index="11" value="inner_focus"/>
+        <action index="12" value="power_infusion,if=talent.power_infusion.enabled"/>
+        <action index="13" value="power_word_shield,if=!cooldown.rapture.remains"/>
+        <action index="14" value="renew,if=buff.borrowed_time.up&amp;(!ticking|remains&lt;tick_time)"/>
+        <action index="15" value="penance_heal,if=buff.borrowed_time.up|target.buff.grace.stack&lt;3"/>
+        <action index="16" value="greater_heal,if=buff.inner_focus.up"/>
+        <action index="17" value="penance_heal"/>
+        <action index="18" value="flash_heal,if=buff.surge_of_light.react"/>
+        <action index="19" value="greater_heal,if=buff.power_infusion.up|mana.pct&gt;20"/>
+        <action index="20" value="power_word_solace,if=talent.power_word_solace.enabled"/>
+        <action index="21" value="heal"/>
+      </priorities>
+      <actions>
+        <action id="28730" name="arcane_torrent" count="4.201" frequency="121.022" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://6.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=arcane_torrent DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=496|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>0</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="4.201">
+            <result type="hit" count="4.201" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://6.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=arcane_torrent DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=496|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="0" name="divine_aegis" count="0" frequency="0" dpe="0" dpe_pct="46.135" dpet="0" apr="0" pdps="45100.087">
+          <chart type="timeline_aps" href="http://7.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=divine_aegis APS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:RRYYeekkqqvv0044887777777777777777775522yyuuqqoonnooppppqqrrssttuuuussqqoonnoopprrttuuvvvvvvvvuussppoooooopprrssuuvvwwxxxxwwvvvvwwwwxxyyzz000000zzxxvvssppmmkkiiiiiijjkkllmmnnoooooommkkiiggffddbbaaZZYYYYXXXXXXXXXXXXYYYYZZbbddffgghhiiiijjjjjjjjiiiiiikknnppssuuvvwwwwvvuurroollhheeccaaZZYYXXWWWWWWXXXXYYYYZZZZZZaaaaaaaaaaaaZZZZYYYYXXXXWWWWWWWWWWWWWWWWXXXXXXXXYYYYZZaabbcceeffgghhiiiihhggffddccaaZZXXVVTTRRPPNNMMMMNNQQUUYYccggkkooqqssssrrppooooppqqrrssssssttttssqqoolljjhhffddbbaaaaaabbccffhhkknnppqqrrssrrqqoommjjhhffddbbaaZZYYXXZZaaYYVVTTRRO&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.5928,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=539|1:|0|avg=44184|max=74534&amp;amp;chxp=1,1,59,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>20268118.228</actual_amount>
+          <total_amount>20607517.259</total_amount>
+          <overkill_pct>1.647</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="225.037">
+            <result type="hit" count="225.037" pct="100" min="0" max="315906.950" avg="90067.881" avg_min="76048.458" avg_max="103476.202" actual="20268118.228" total="20607517.259" overkill_pct="1.597"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://7.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=divine_aegis APS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:RRYYeekkqqvv0044887777777777777777775522yyuuqqoonnooppppqqrrssttuuuussqqoonnoopprrttuuvvvvvvvvuussppoooooopprrssuuvvwwxxxxwwvvvvwwwwxxyyzz000000zzxxvvssppmmkkiiiiiijjkkllmmnnoooooommkkiiggffddbbaaZZYYYYXXXXXXXXXXXXYYYYZZbbddffgghhiiiijjjjjjjjiiiiiikknnppssuuvvwwwwvvuurroollhheeccaaZZYYXXWWWWWWXXXXYYYYZZZZZZaaaaaaaaaaaaZZZZYYYYXXXXWWWWWWWWWWWWWWWWXXXXXXXXYYYYZZaabbcceeffgghhiiiihhggffddccaaZZXXVVTTRRPPNNMMMMNNQQUUYYccggkkooqqssssrrppooooppqqrrssssssttttssqqoolljjhhffddbbaaaaaabbccffhhkknnppqqrrssrrqqoommjjhhffddbbaaZZYYXXZZaaYYVVTTRRO&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.5928,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=539|1:|0|avg=44184|max=74534&amp;chxp=1,1,59,100"/>
+        </action>
+        <action id="2061" name="flash_heal" count="19.492" frequency="21.755" dpe="90241" dpe_pct="4.004" dpet="65913.376" apr="0" pdps="3909.100">
+          <chart type="timeline_aps" href="http://8.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=flash_heal HPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:MMMNVYacglllmmnrvzvsssssnpookggghggcXTSOOONNKFHIKLLMMNNORTUVXYZabaYXXWWXXZZZXWVVWXXYZZaaZYXXXYYYYZaZYWUTTUVWXYZZZYWXYZaabcdefeeeefghhiiigfeggggggfedbaZYYYYYYZZYYYYYYYZZabbbbabccdddeeeeeefffghhhiijjiijjkllnoprrrqqqponmllllkjigecaZZZZZabccccbcdddffhijjkkmnooooqqrrrrqrrrrrrrqpqrsttttttuvwwwxyzz0222345656787766666764544321110zyyyyywwwvwwwwwwxyxyz001223333234567765332332111112110zxvwwxwxwwwwwusqnljgedbZXVTQPNLLKKLMMMMMOPQSUWXYYYYXXXXXYZZaZZYWVVWWXZZaZZYYXYZZabbbbbZZYYYXXYZYYXXWVVWXXYacdffijjklmnqrttuuvvvvvvwuuwxyzywwwzxvuxvtsrtrplifcaZXU&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.5795,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=538|1:|0|avg=3883|max=6701&amp;amp;chxp=1,1,58,100"/>
+          <etpe>1.369</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>1759030.254</actual_amount>
+          <total_amount>1759030.254</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>65913.376</aps>
+          <apet>65913.376</apet>
+          <direct_results count="19.492">
+            <result type="hit" count="14.270" pct="73.209" min="68227.631" max="81634.866" avg="70379.920" avg_min="68227.631" avg_max="73176.969" actual="1004313.231" total="1004313.231" overkill_pct="0"/>
+            <result type="crit" count="5.222" pct="26.791" min="140548.919" max="168167.823" avg="144521.873" avg_min="0" avg_max="158391.285" actual="754717.023" total="754717.023" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://8.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=flash_heal HPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:MMMNVYacglllmmnrvzvsssssnpookggghggcXTSOOONNKFHIKLLMMNNORTUVXYZabaYXXWWXXZZZXWVVWXXYZZaaZYXXXYYYYZaZYWUTTUVWXYZZZYWXYZaabcdefeeeefghhiiigfeggggggfedbaZYYYYYYZZYYYYYYYZZabbbbabccdddeeeeeefffghhhiijjiijjkllnoprrrqqqponmllllkjigecaZZZZZabccccbcdddffhijjkkmnooooqqrrrrqrrrrrrrqpqrsttttttuvwwwxyzz0222345656787766666764544321110zyyyyywwwvwwwwwwxyxyz001223333234567765332332111112110zxvwwxwxwwwwwusqnljgedbZXVTQPNLLKKLMMMMMOPQSUWXYYYYXXXXXYZZaZZYWVVWWXZZaZZYYXYZZabbbbbZZYYYXXYZYYXXWVVWXXYacdffijjklmnqrttuuvvvvvvwuuwxyzywwwzxvuxvtsrtrplifcaZXU&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.5795,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=538|1:|0|avg=3883|max=6701&amp;chxp=1,1,58,100"/>
+          <target>Healing Target</target>
+        </action>
+        <action id="47753" name="flash_heal_divine_aegis" count="5.222" frequency="60.360" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://9.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=flash_heal_divine_aegis APS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=538|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>1858403.128</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="5.222">
+            <result type="hit" count="5.222" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="1858403.128" overkill_pct="99.900"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://9.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=flash_heal_divine_aegis APS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=538|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Healing Target</target>
+        </action>
+        <action id="2060" name="greater_heal" count="48.795" frequency="8.505" dpe="163906" dpe_pct="18.205" dpet="76842.413" apr="10.549" pdps="17808.425">
+          <chart type="timeline_aps" href="http://0.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=greater_heal HPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:Zeffffknsxz11228z4zwzwvvvvssqonmmmmgdZXTQOOOOPRQPPPQRSTTTUVWYaceffcaZXXXYZbdfffedbbaabcefgfecaYXXYZbdeeedcbbabcdfgggfedccdfgijkkkkkkkkkkkkjhfdbZWVTSQPNLJIGGGGHHIIHHHHIIIJJJJJJIHGFEEDDDDCCBBAAAAAAAAAAAAAAAAAAAAAAAABBCCDDEFGGHIJJKKKKKKLMOQRSTTTUVWYacdffgggecaYWVUTRPNLIGEDCBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCCCCDDEEEEEEEEEEEEEDCCBBBBAAAAAAAAAAAAAAAAAABDFIKMOQRRSTUVXYaceffecaYXXYZbcdedcbaYYXWWWWWVTRPNLJIHGGFFEDDCBBBBBCDEEFHIKMOQRSTTUUUVVUUTSRPOMKIGFDDCCBBAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.2384,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=529|1:|min=-0|0|avg=16857|max=70700&amp;amp;chxp=1,1,0,24,100"/>
+          <etpe>2.133</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>7997758.342</actual_amount>
+          <total_amount>7997758.342</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>76842.413</aps>
+          <apet>76842.413</apet>
+          <direct_results count="48.795">
+            <result type="hit" count="31.366" pct="64.282" min="113700.434" max="136045.826" avg="119065.905" avg_min="115761.818" avg_max="121618.600" actual="3734600.722" total="3734600.722" overkill_pct="0"/>
+            <result type="crit" count="17.428" pct="35.718" min="180171.458" max="280254.402" avg="244607.917" avg_min="237828.321" avg_max="254503.590" actual="4263157.621" total="4263157.621" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://0.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=greater_heal HPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:Zeffffknsxz11228z4zwzwvvvvssqonmmmmgdZXTQOOOOPRQPPPQRSTTTUVWYaceffcaZXXXYZbdfffedbbaabcefgfecaYXXYZbdeeedcbbabcdfgggfedccdfgijkkkkkkkkkkkkjhfdbZWVTSQPNLJIGGGGHHIIHHHHIIIJJJJJJIHGFEEDDDDCCBBAAAAAAAAAAAAAAAAAAAAAAAABBCCDDEFGGHIJJKKKKKKLMOQRSTTTUVWYacdffgggecaYWVUTRPNLIGEDCBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCCCCDDEEEEEEEEEEEEEDCCBBBBAAAAAAAAAAAAAAAAAABDFIKMOQRRSTUVXYaceffecaYXXYZbcdedcbaYYXWWWWWVTRPNLJIHGGFFEDDCBBBBBCDEEFHIKMOQRSTTUUUVVUUTSRPOMKIGFDDCCBBAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.2384,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=529|1:|min=-0|0|avg=16857|max=70700&amp;chxp=1,1,0,24,100"/>
+          <target>Healing Target</target>
+        </action>
+        <action id="47753" name="greater_heal_divine_aegis" count="17.428" frequency="24.043" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://1.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=greater_heal_divine_aegis APS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=529|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>10497521.486</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="17.428">
+            <result type="hit" count="17.428" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="10497521.486" overkill_pct="100"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://1.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=greater_heal_divine_aegis APS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=529|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Healing Target</target>
+        </action>
+        <action id="2050" name="heal" count="76.100" frequency="3.820" dpe="64567" dpe_pct="11.184" dpet="28442.468" apr="11.574" pdps="10933.757">
+          <chart type="timeline_aps" href="http://2.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=heal HPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCCDDEFGHJLNOQRSTUVWXXYZabbbbaZZYZZabcdddeeefghjklmnooopppqrstuuuvvvvwwxyyyyyxwusqomkjhgfdcaYWUSRRRRQPPOONMLKJIHHHIJKKLNQTVYbegilnqsuwxz012233333334444444444445555545444444554444444444444444444444444555555555555555555555566778775444333333332100zzz012223333210zxvtrolifdaYUSPMJHFDCBBAAAAAAAAAAAAAAAAAAAAAAABBBBBCEFHIKLMNOOPQSTWYacddccbbbbdegggfdcZYWWVVWWXXYYYZabdfikmoqsuwxzz012111112322132222110xusqnkhebZ&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.4475,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=540|1:|min=-0|0|avg=11309|max=25273&amp;amp;chxp=1,1,0,45,100"/>
+          <etpe>2.270</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>4913550.135</actual_amount>
+          <total_amount>4913550.135</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>28442.468</aps>
+          <apet>28442.468</apet>
+          <direct_results count="76.100">
+            <result type="hit" count="62.695" pct="82.385" min="53189.673" max="56240.983" avg="54393.571" avg_min="53681.820" avg_max="55377.405" actual="3410211.143" total="3410211.143" overkill_pct="0"/>
+            <result type="crit" count="13.405" pct="17.615" min="109570.726" max="115856.425" avg="112143.235" avg_min="109570.726" avg_max="115437.379" actual="1503338.992" total="1503338.992" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://2.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=heal HPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCCDDEFGHJLNOQRSTUVWXXYZabbbbaZZYZZabcdddeeefghjklmnooopppqrstuuuvvvvwwxyyyyyxwusqomkjhgfdcaYWUSRRRRQPPOONMLKJIHHHIJKKLNQTVYbegilnqsuwxz012233333334444444444445555545444444554444444444444444444444444555555555555555555555566778775444333333332100zzz012223333210zxvtrolifdaYUSPMJHFDCBBAAAAAAAAAAAAAAAAAAAAAAABBBBBCEFHIKLMNOOPQSTWYacddccbbbbdegggfdcZYWWVVWWXXYYYZabdfikmoqsuwxzz012111112322132222110xusqnkhebZ&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.4475,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=540|1:|min=-0|0|avg=11309|max=25273&amp;chxp=1,1,0,45,100"/>
+          <target>Healing Target</target>
+        </action>
+        <action id="47753" name="heal_divine_aegis" count="13.405" frequency="19.535" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://3.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=heal_divine_aegis APS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=537|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>3701793.663</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="13.405">
+            <result type="hit" count="13.405" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="3701793.663" overkill_pct="100"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://3.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=heal_divine_aegis APS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=537|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Healing Target</target>
+        </action>
+        <action id="64901" name="hymn_of_hope" count="1.753" frequency="362.632" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://4.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=hymn_of_hope DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=427|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>7.967</etpe>
+          <ttpt>1.558</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>0</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="1.753">
+            <result type="none" count="1.753" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <tick_results count="8.680" ticks="8.680">
+            <result type="none" count="8.680" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </tick_results>
+          <chart type="timeline_stat_aps" href="http://4.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=hymn_of_hope DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=427|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Fluffy_Pillow</target>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="89485" name="inner_focus" count="12.589" frequency="38.165" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://6.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=inner_focus DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=537|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>0</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="12.589">
+            <result type="none" count="12.589" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://6.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=inner_focus DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=537|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="47540" name="penance_heal" count="29.228" frequency="15.396" dpe="162329" dpe_pct="10.800" dpet="75839.506" apr="15.360" pdps="10536.823">
+          <chart type="timeline_aps" href="http://7.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=penance_heal HPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:XXeryzzzzzzz67wxyyyyyyskkqttttttmfaaZZZZZaccZVUVWXYYYYaeimopqqnjfdehknopqpokheegjmopppolhffgiknoppomjhfgikmopponlkklmopqrrrqppoppqrrrqomlklnopppomljjjjlmoooonmkiijkmnnoonmljjjklmnnnnmljjjjjjkkjjihffeeedccbaZXWVUTTSSTVWYZaabbcccdfikmopppnlkklmnpqqqponnnnmllkkigedbZYYXWVTRPONMMLLLLKKJIIIIIIIHHHHHHHHIIJJJKKLLLMMNNOOOPPPPPOOOONNMMMLLKKJJIIIIIHHHHGGGGGGGGHHIJKLMNOQSUWYabcdefghhhgffedbZYWUSRQPONMKJIHHGGFFFHKNQSUUVVWWXZbfiloppolifefhjmoppomjhfegilnopomkigfghkmoppoljhghikmnoonmkjjjlnooooonnnnnnooonnljgedccbaZXVTQPNMMLLKJJIIHHGGGFFGGGGGFFEEEEE&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.4759,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=540|1:|0|avg=10198|max=21428&amp;amp;chxp=1,1,48,100"/>
+          <etpe>2.140</etpe>
+          <ttpt>0.631</ttpt>
+          <actual_amount>4744595.305</actual_amount>
+          <total_amount>4744595.305</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>75839.506</aps>
+          <apet>75839.506</apet>
+          <direct_results count="29.228">
+            <result type="hit" count="23.886" pct="81.722" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+            <result type="crit" count="5.342" pct="18.278" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <tick_results count="87.394" ticks="87.516">
+            <result type="hit" count="71.710" pct="82.053" min="37026.944" max="55186.896" avg="45589.378" avg_min="44586.810" avg_max="46550.199" actual="3269185.398" total="3269185.398" overkill_pct="0"/>
+            <result type="crit" count="15.685" pct="17.947" min="76275.505" max="113685.005" avg="94067.483" avg_min="90143.778" avg_max="98977.013" actual="1475409.907" total="1475409.907" overkill_pct="0"/>
+          </tick_results>
+          <chart type="timeline_stat_aps" href="http://7.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=penance_heal HPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:XXeryzzzzzzz67wxyyyyyyskkqttttttmfaaZZZZZaccZVUVWXYYYYaeimopqqnjfdehknopqpokheegjmopppolhffgiknoppomjhfgikmopponlkklmopqrrrqppoppqrrrqomlklnopppomljjjjlmoooonmkiijkmnnoonmljjjklmnnnnmljjjjjjkkjjihffeeedccbaZXWVUTTSSTVWYZaabbcccdfikmopppnlkklmnpqqqponnnnmllkkigedbZYYXWVTRPONMMLLLLKKJIIIIIIIHHHHHHHHIIJJJKKLLLMMNNOOOPPPPPOOOONNMMMLLKKJJIIIIIHHHHGGGGGGGGHHIJKLMNOQSUWYabcdefghhhgffedbZYWUSRQPONMKJIHHGGFFFHKNQSUUVVWWXZbfiloppolifefhjmoppomjhfegilnopomkigfghkmoppoljhghikmnoonmkjjjlnooooonnnnnnooonnljgedccbaZXVTQPNMMLLKJJIIHHGGGFFGGGGGFFEEEEE&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.4759,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=540|1:|0|avg=10198|max=21428&amp;chxp=1,1,48,100"/>
+          <target>Healing Target</target>
+          <target>Healing Target</target>
+        </action>
+        <action id="47753" name="penance_heal_divine_aegis" count="15.985" frequency="20.115" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://8.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=penance_heal_divine_aegis APS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=532|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>0</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="15.985">
+            <result type="hit" count="15.985" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://8.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=penance_heal_divine_aegis APS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=532|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Healing Target</target>
+        </action>
+        <action id="47753" name="penance_heal_tick_divine_aegis" count="15.685" frequency="27.079" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://9.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=penance_heal_tick_divine_aegis APS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=539|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>3633030.219</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="15.685">
+            <result type="hit" count="15.685" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="3633030.219" overkill_pct="100"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://9.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=penance_heal_tick_divine_aegis APS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=539|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Healing Target</target>
+        </action>
+        <action id="10060" name="power_infusion" count="4.285" frequency="121.203" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://0.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=power_infusion DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=489|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>0</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="4.285">
+            <result type="none" count="4.285" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://0.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=power_infusion DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=489|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="17" name="power_word_shield" count="23.276" frequency="18.711" dpe="131398" dpe_pct="6.962" dpet="101046.135" apr="7.564" pdps="6771.993">
+          <chart type="timeline_aps" href="http://1.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=power_word_shield APS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:mmmmnnqqvvzzZZUUVVVVVVWWYYXXUUSSPPPPQQRRbbjjkkkkkkjjhhjjppsslliimmqqssvvxxvvppllkklliiggiimmooqqssvvvvssppoollhhggjjkkllllmmoonnmmlljjffddeeffgghhkkppuuyy0000yyxxwwvvuussoonnmmnnnnnnllmmlliiggddaaXXUUSSRROOLLJJIILLQQUUWWYYaaeejjrrxxyyvvwwyy112211yyrrmmiiffaaVVRROOMMKKIIHHGGGGFFEEDDCCBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCFFGGHHIIJJJJJJKKJJHHFFDDCCBBBBAAAAAAHHTTbbffhhiijjkkoottssjjggiimmrruuvvuurroooooommkklloorrrrttvvyy226688440000224422xxrrmmiiggeeaaVVQQNNMMKKHHGGEEDDCCCCBBBBAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.4386,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=525|1:|min=-0|0|avg=6766|max=15426&amp;amp;chxp=1,1,0,44,100"/>
+          <etpe>1.300</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>3058464.402</actual_amount>
+          <total_amount>4232292.801</total_amount>
+          <overkill_pct>27.735</overkill_pct>
+          <aps>101046.135</aps>
+          <apet>101046.135</apet>
+          <direct_results count="57.940">
+            <result type="hit" count="57.940" pct="100" min="0" max="209692.293" avg="52790.720" avg_min="32603.491" avg_max="60697.214" actual="3058464.402" total="4232292.801" overkill_pct="27.990"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://1.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=power_word_shield APS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:mmmmnnqqvvzzZZUUVVVVVVWWYYXXUUSSPPPPQQRRbbjjkkkkkkjjhhjjppsslliimmqqssvvxxvvppllkklliiggiimmooqqssvvvvssppoollhhggjjkkllllmmoonnmmlljjffddeeffgghhkkppuuyy0000yyxxwwvvuussoonnmmnnnnnnllmmlliiggddaaXXUUSSRROOLLJJIILLQQUUWWYYaaeejjrrxxyyvvwwyy112211yyrrmmiiffaaVVRROOMMKKIIHHGGGGFFEEDDCCBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCFFGGHHIIJJJJJJKKJJHHFFDDCCBBBBAAAAAAHHTTbbffhhiijjkkoottssjjggiimmrruuvvuurroooooommkklloorrrrttvvyy226688440000224422xxrrmmiiggeeaaVVQQNNMMKKHHGGEEDDCCCCBBBBAAA&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.4386,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=525|1:|min=-0|0|avg=6766|max=15426&amp;chxp=1,1,0,44,100"/>
+          <target>Healing Target</target>
+        </action>
+        <action id="139" name="renew" count="21.023" frequency="20.291" dpe="56637" dpe_pct="2.710" dpet="36937.450" apr="7.622" pdps="2643.583">
+          <chart type="timeline_aps" href="http://2.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=renew HPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:Taaahhnnttzz607767812vwxuvsvqupsopnmhgggggghffeddccabbYacdfghjkjklklmllmllmlllmlmmlmnllmllmllllllmllmllmllmllllllmllmlmnmnnmnnnopppppoonmmmlllllkkkiihhiiijjjkkkkkjjkjkkkkkkjjjiiihhhgffedccbaZYXWVUUTSSRQPOONMMLLKKJIIIIJJKLMOPRSUVXYacdfgijkkllmmmnnnnoooooonnmkjigedbZXWUSQOMKJIHGFFEEDDCCCBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBCDDEEFGGHHIIIIIIIHHGGFFEEDCCBBBAAAABCDEGHJLNPQSUWYacdghijkkllllllmllmmllllllllllllllmmmmmmmmmmmmmmmmmmmmlllllllllllllllllllllkjihfecbZXVUSRPNLJHGFEDCCBBBBBAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.4066,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=527|1:|0|avg=2645|max=6504&amp;amp;chxp=1,1,41,100"/>
+          <etpe>1.533</etpe>
+          <ttpt>2.951</ttpt>
+          <actual_amount>1190678.691</actual_amount>
+          <total_amount>1190678.691</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>4013.993</aps>
+          <apet>36937.450</apet>
+          <direct_results count="21.023">
+            <result type="hit" count="17.257" pct="82.087" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+            <result type="crit" count="3.766" pct="17.913" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <tick_results count="89.588" ticks="89.588">
+            <result type="hit" count="73.399" pct="81.930" min="8745.541" max="12864.485" avg="11149.656" avg_min="10917.992" avg_max="11426.337" actual="818372.141" total="818372.141" overkill_pct="0"/>
+            <result type="crit" count="16.188" pct="18.070" min="18742.236" max="26500.839" avg="22998.418" avg_min="22323.916" avg_max="24507.207" actual="372306.551" total="372306.551" overkill_pct="0"/>
+          </tick_results>
+          <chart type="timeline_stat_aps" href="http://2.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=renew HPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:Taaahhnnttzz607767812vwxuvsvqupsopnmhgggggghffeddccabbYacdfghjkjklklmllmllmlllmlmmlmnllmllmllllllmllmllmllmllllllmllmlmnmnnmnnnopppppoonmmmlllllkkkiihhiiijjjkkkkkjjkjkkkkkkjjjiiihhhgffedccbaZYXWVUUTSSRQPOONMMLLKKJIIIIJJKLMOPRSUVXYacdfgijkkllmmmnnnnoooooonnmkjigedbZXWUSQOMKJIHGFFEEDDCCCBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBCDDEEFGGHHIIIIIIIHHGGFFEEDCCBBBAAAABCDEGHJLNPQSUWYacdghijkkllllllmllmmllllllllllllllmmmmmmmmmmmmmmmmmmmmlllllllllllllllllllllkjihfecbZXVUSRPNLJHGFEDCCBBBBBAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.4066,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=527|1:|0|avg=2645|max=6504&amp;chxp=1,1,41,100"/>
+          <target>Healing Target</target>
+        </action>
+        <action id="47753" name="renew_divine_aegis" count="16.188" frequency="24.656" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://3.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=renew_divine_aegis APS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=524|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>916768.763</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="16.188">
+            <result type="hit" count="16.188" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="916768.763" overkill_pct="100"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://3.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=renew_divine_aegis APS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=524|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Healing Target</target>
+        </action>
+        <action id="34433" name="shadowfiend" count="2.760" frequency="181.171" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://4.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=shadowfiend DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=418|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>1.290</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>0</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="2.760">
+            <result type="none" count="2.760" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://4.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=shadowfiend DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=418|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+      </actions>
+      <action_definitions>
+        <action_detail id="28730" name="arcane_torrent">
+          <school>arcane</school>
+          <resource>none</resource>
+          <range>0</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="120"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip>Silenced.</tooltip>
+          <description>Silence all enemies within $A1 yards for $d and restore $s2% of your Mana.  Non-player victim spellcasting is also interrupted for $32747d.</description>
+        </action_detail>
+        <action_detail id="2061" name="flash_heal">
+          <school>holy</school>
+          <resource>mana</resource>
+          <range>40</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>17700</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>1.500</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Healing Target</target>
+          <description>Heals a friendly target for $s1.</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>1.314</direct_power_mod>
+            <base min="12618.174" max="14664.364"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="47753" name="flash_heal_divine_aegis">
+          <school>holy</school>
+          <resource>none</resource>
+          <range>100</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Healing Target</target>
+          <tooltip>Absorbs $w1 damage.</tooltip>
+          <description>$@spelldesc47515</description>
+          <direct_damage>
+            <may_crit>false</may_crit>
+            <direct_power_mod>0</direct_power_mod>
+            <base min="140548.919" max="140548.919"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="2060" name="greater_heal">
+          <school>holy</school>
+          <resource>mana</resource>
+          <range>40</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>17700</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>2.500</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Healing Target</target>
+          <description>A slow casting spell that heals a single target for $s1.</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>2.190</direct_power_mod>
+            <base min="21021.878" max="24430.831"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="47753" name="greater_heal_divine_aegis">
+          <school>holy</school>
+          <resource>none</resource>
+          <range>100</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Healing Target</target>
+          <tooltip>Absorbs $w1 damage.</tooltip>
+          <description>$@spelldesc47515</description>
+          <direct_damage>
+            <may_crit>false</may_crit>
+            <direct_power_mod>0</direct_power_mod>
+            <base min="247665.943" max="247665.943"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="2050" name="heal">
+          <school>holy</school>
+          <resource>mana</resource>
+          <range>40</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>5700</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>2.500</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Healing Target</target>
+          <description>Heal your target for $s1.</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>1.024</direct_power_mod>
+            <base min="9847.029" max="11443.845"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="47753" name="heal_divine_aegis">
+          <school>holy</school>
+          <resource>none</resource>
+          <range>100</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Healing Target</target>
+          <tooltip>Absorbs $w1 damage.</tooltip>
+          <description>$@spelldesc47515</description>
+          <direct_damage>
+            <may_crit>false</may_crit>
+            <direct_power_mod>0</direct_power_mod>
+            <base min="109570.726" max="109570.726"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="64901" name="hymn_of_hope">
+          <school>holy</school>
+          <resource>none</resource>
+          <range>40</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="360"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip>Reciting Hymn of Hope, restoring $64904s1% mana to nearby friendly party or raid targets most in need every $t1 sec for $d.</tooltip>
+          <description>Restores $64904s1% mana to $64901s2 nearby low mana friendly party or raid targets every $64901t1 sec for $64901d, and increases their total maximum mana by $64904s2% for $64904d. Maximum of $*4;s2 mana restores. The Priest must channel to maintain the spell.</description>
+          <damage_over_time>
+            <tick_may_crit>true</tick_may_crit>
+            <tick_zero>false</tick_zero>
+            <tick_power_mod>0</tick_power_mod>
+            <base>0</base>
+            <num_ticks>4</num_ticks>
+            <base_tick_time>2</base_tick_time>
+            <hasted_ticks>1</hasted_ticks>
+            <dot_behavior>DOT_REFRESH</dot_behavior>
+          </damage_over_time>
+        </action_detail>
+        <action_detail id="64904" name="hymn_of_hope_tick">
+          <school>holy</school>
+          <resource>none</resource>
+          <range>40</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip>Maximum mana increased by $s2%.</tooltip>
+          <description>$@spelldesc64901</description>
+        </action_detail>
+        <action_detail id="89485" name="inner_focus">
+          <school>physical</school>
+          <resource>none</resource>
+          <range>0</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="1024"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip>Mana cost of your next Flash Heal, Greater Heal or Prayer of Healing reduced by $s1% and critical effect chance increased by $s2%.</tooltip>
+          <description>Reduces the mana cost of your next Flash Heal, Greater Heal or Prayer of Healing by $s1% and increases its critical effect chance by $s2%.
+
+Additionally, you become immune to Silence, Interrupt, and Dispel effects for $96267d.</description>
+        </action_detail>
+        <action_detail id="47540" name="penance_heal">
+          <school>holy</school>
+          <resource>mana</resource>
+          <range>40</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>9300</base_cost>
+          <cooldown duration="9"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Healing Target</target>
+          <description>Launches a volley of holy light at the target, causing $47666s1 Holy damage to an enemy, or $47750s1 healing to an ally instantly and every $47758t2 sec for $47758d.</description>
+          <damage_over_time>
+            <tick_may_crit>true</tick_may_crit>
+            <tick_zero>true</tick_zero>
+            <tick_power_mod>0</tick_power_mod>
+            <base>0</base>
+            <num_ticks>2</num_ticks>
+            <base_tick_time>1</base_tick_time>
+            <hasted_ticks>0</hasted_ticks>
+            <dot_behavior>DOT_REFRESH</dot_behavior>
+          </damage_over_time>
+        </action_detail>
+        <action_detail id="47666" name="penance_heal_tick">
+          <school>holy</school>
+          <resource>none</resource>
+          <range>40</range>
+          <travel_speed>40</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Healing Target</target>
+          <description>$@spelldesc47540</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>1.120</direct_power_mod>
+            <base min="1014.879" max="1146.737"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="47753" name="penance_heal_divine_aegis">
+          <school>holy</school>
+          <resource>none</resource>
+          <range>100</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Healing Target</target>
+          <tooltip>Absorbs $w1 damage.</tooltip>
+          <description>$@spelldesc47515</description>
+        </action_detail>
+        <action_detail id="47753" name="penance_heal_tick_divine_aegis">
+          <school>holy</school>
+          <resource>none</resource>
+          <range>100</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Healing Target</target>
+          <tooltip>Absorbs $w1 damage.</tooltip>
+          <description>$@spelldesc47515</description>
+          <direct_damage>
+            <may_crit>false</may_crit>
+            <direct_power_mod>0</direct_power_mod>
+            <base min="97018.761" max="97018.761"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="10060" name="power_infusion">
+          <school>holy</school>
+          <resource>none</resource>
+          <range>0</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="120"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip>Spell casting speed increased by $s1%, all damage increased by $s3%, and mana cost of spells reduced by $s2%.</tooltip>
+          <description>Infuses the Priest with power, increasing spell casting speed by $s1%, all damage by $s3%, and reducing the mana cost of all spells by $s2%.  Lasts $d.</description>
+        </action_detail>
+        <action_detail id="17" name="power_word_shield">
+          <school>holy</school>
+          <resource>mana</resource>
+          <range>40</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>18300</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Healing Target</target>
+          <tooltip>Absorbs $w1 damage.</tooltip>
+          <description>Draws on the soul of the friendly target to shield them, absorbing $&amp;lt;shield&amp;gt; damage$?s55672[ and healing them for $55672s1% of the absorption amount][].  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.</description>
+          <direct_damage>
+            <may_crit>false</may_crit>
+            <direct_power_mod>1.871</direct_power_mod>
+            <base min="19428.314" max="19428.314"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="139" name="renew">
+          <school>holy</school>
+          <resource>mana</resource>
+          <range>40</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>7800</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Healing Target</target>
+          <tooltip>Healing $w1 health every $t1 sec.</tooltip>
+          <description>Heals the target for $m1 every $t1 sec for $d.</description>
+          <damage_over_time>
+            <tick_may_crit>true</tick_may_crit>
+            <tick_zero>false</tick_zero>
+            <tick_power_mod>0.207</tick_power_mod>
+            <base>2152.173</base>
+            <num_ticks>4</num_ticks>
+            <base_tick_time>3</base_tick_time>
+            <hasted_ticks>1</hasted_ticks>
+            <dot_behavior>DOT_REFRESH</dot_behavior>
+          </damage_over_time>
+        </action_detail>
+        <action_detail id="47753" name="renew_divine_aegis">
+          <school>holy</school>
+          <resource>none</resource>
+          <range>100</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Healing Target</target>
+          <tooltip>Absorbs $w1 damage.</tooltip>
+          <description>$@spelldesc47515</description>
+          <direct_damage>
+            <may_crit>false</may_crit>
+            <direct_power_mod>0</direct_power_mod>
+            <base min="23420.560" max="23420.560"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="34433" name="shadowfiend">
+          <school>shadow</school>
+          <resource>none</resource>
+          <range>40</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="180"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <description>Creates a shadowy fiend to attack the target.  Caster receives $34650s1% mana when the Shadowfiend attacks.  Lasts $d.</description>
+        </action_detail>
+      </action_definitions>
+      <buffs>
+        <buff name="bloodlust" type="dynamic"/>
+        <buff name="skull_banner" type="dynamic"/>
+        <buff name="jade_serpent_potion" type="dynamic"/>
+        <buff name="hymn_of_hope" type="dynamic"/>
+        <buff name="stormlash" type="dynamic"/>
+        <buff name="power_infusion" type="dynamic"/>
+        <buff name="surge_of_light" type="dynamic"/>
+        <buff name="borrowed_time" type="dynamic"/>
+        <buff name="inner_fire" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="inner_focus" type="dynamic"/>
+        <buff name="jade_spirit" type="dynamic"/>
+        <buff name="darkglow_embroidery_3" type="dynamic"/>
+      </buffs>
+      <benefits/>
+      <uptimes>
+        <uptime name="Mana Cap" pct="0.2"/>
+      </uptimes>
+      <procs>
+        <proc name="Surge of Light" count="22.0" frequency="19.39"/>
+        <proc name="Surge of Light lost to overflow" count="0.0" frequency="35.30"/>
+      </procs>
+      <gains>
+        <gain name="shadowfiend" actual="218738.7"/>
+        <gain name="hymn_of_hope" actual="58328.4"/>
+        <gain name="Rapture" actual="354508.2"/>
+        <gain name="arcane_torrent" actual="25206.0"/>
+        <gain name="hymn_of_hope_max_mana" actual="78525.0"/>
+        <gain name="mana_potion" actual="30001.0"/>
+        <gain name="mp5_regen" actual="1055798.0"/>
+      </gains>
+      <charts>
+        <chart type="dpet" href="http://8.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Chaosity Healing Sources&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:46,18,11,11,7,4,3&amp;chds=0,100&amp;chdls=ffffff&amp;chco=FFFFFF,FFE57F,FFE57F,FFE57F,FFE57F,FFE57F,FFE57F&amp;chl=divine_aegis|greater_heal|heal|penance_heal|power_word_shield|flash_heal|renew&amp;"/>
+        <chart type="dmg" href="http://8.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Chaosity Healing Sources&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:46,18,11,11,7,4,3&amp;chds=0,100&amp;chdls=ffffff&amp;chco=FFFFFF,FFE57F,FFE57F,FFE57F,FFE57F,FFE57F,FFE57F&amp;chl=divine_aegis|greater_heal|heal|penance_heal|power_word_shield|flash_heal|renew&amp;"/>
+        <chart type="timeline_dps" href="http://0.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=Chaosity DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:Ybfgllqrwz2344576854543222110zzyxwvtqomljihhfffeeeeffghhjklmnoopppoonnmmmmnnnnnnnnooopppqqqpppoonnnnnnnnnmnnnnoopqqqrrrrrrssttttuuuuuuuuuuuuttsrqqoonmlkjjhhhhgggggghhhhiiiiiijjjiihhhggffeedccbbbaaZZYYYYXXXXXXXWWWWWXXXXYYZabbccddffggghiijjjkkkklllmnoopqqqrqqqppponnlljiggedcbaaYYXXWWVVVVVUUUUUUUUUVVVVVVWWWWWWXXXXXXXXXXWWWWWWWWVVVVVVUUUUUUUUUUUUUUUUUUVVVVVVWWWXXXYZaabbccddeefffeeeddccbaZZYYXWVVUTSRQPOOONNNNOPPQRTUWXZadeghjkmmnnonnnnnmnnnnnnnnnnnnnnnnnnmmllkjjiihhggffeeddccccccddefggiijjllmmnooonnmmlkjihgeeccaaZZXXWWWWVVVUUUVUVUTSRQPONMK&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.0113,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=539|1:|0|avg=1995|max=176339&amp;chxp=1,1,1,100"/>
+        <chart type="distribution_dps" href="http://3.chart.apis.google.com/chart?cht=bvs&amp;chf=bg,s,333333&amp;chtt=Chaosity HPS Distribution&amp;chts=dddddd,18&amp;chs=550x185&amp;chg=20,20&amp;chxs=0,FFFFFF&amp;chd=t:1,0,0,0,0,1,2,4,5,1,4,12,13,18,19,32,34,35,49,34,51,52,64,56,60,45,74,52,44,42,39,37,33,14,20,15,8,8,2,5,1,3,4,2,1,0,0,1,0,2&amp;chds=0,74&amp;chbh=5&amp;chxt=x&amp;chxl=0:|min=79813|avg=97704|max=116721&amp;chxp=0,1,48,100&amp;"/>
+        <chart type="time_spent" href="http://9.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Chaosity Spent Time&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:38.4,23.1,13.9,7.2,6.7,5.9,3.1,0.8,0.7&amp;chds=0,100&amp;chdls=ffffff&amp;chco=FFE57F,FFE57F,FFE57F,FFE57F,FFE57F,FFE57F,FFE57F,9482C9,ffffff&amp;chl=heal 172.8s|greater_heal 104.1s|penance_heal 62.6s|renew 32.2s|power_word_shield 30.3s|flash_heal 26.7s|hymn_of_hope 14.0s|shadowfiend 3.6s|waiting 3.4s&amp;"/>
+      </charts>
+    </player>
+    <player name="Chaosity_shadowfiend" owner="Chaosity">
+      <type>Player</type>
+      <level>90</level>
+      <race>none</race>
+      <class type="pet" subtype="shadowfiend"/>
+      <specialization>unknown</specialization>
+      <primary_role>hybrid</primary_role>
+      <position>back</position>
+      <dps value="27476.662" effective="27476.662" error="0" range="10986.248" convergence="0"/>
+      <waiting_time pct="40.057"/>
+      <active_time pct="7.287"/>
+      <apm>25.116</apm>
+      <attribute name="strength" base="453" gear="453" buffed="453"/>
+      <attribute name="agility" base="883" gear="883" buffed="883"/>
+      <attribute name="stamina" base="14023" gear="353" buffed="15390"/>
+      <attribute name="intellect" base="4298" gear="159" buffed="4934"/>
+      <attribute name="spirit" base="225" gear="225" buffed="225"/>
+      <attribute name="mastery_value" base="0" gear="0" buffed="0"/>
+      <attribute name="spellpower" base="20926" gear="0" buffed="27659"/>
+      <attribute name="spellhit" base="0" gear="0" buffed="0"/>
+      <attribute name="spellcrit" base="12" gear="0" buffed="18"/>
+      <attribute name="spellhaste" base="5" gear="0" buffed="11"/>
+      <attribute name="spellspeed" base="5" gear="0" buffed="11"/>
+      <attribute name="manareg_per_second" base="0" gear="0" buffed="0"/>
+      <attribute name="attackpower" base="20926" gear="0" buffed="27659"/>
+      <attribute name="attackhit" base="0" gear="0" buffed="0"/>
+      <attribute name="attackcrit" base="12" gear="0" buffed="18"/>
+      <attribute name="expertise" base="0" gear="0" buffed="0"/>
+      <attribute name="expertise_oh" base="0" gear="0" buffed="0"/>
+      <attribute name="attackhaste" base="5" gear="0" buffed="5"/>
+      <attribute name="attackspeed" base="5" gear="0" buffed="16"/>
+      <attribute name="armor" base="14256" gear="0" buffed="22809"/>
+      <attribute name="miss" base="0" gear="0" buffed="0"/>
+      <attribute name="dodge" base="0" gear="0" buffed="0"/>
+      <attribute name="parry" base="0" gear="0" buffed="0"/>
+      <attribute name="block" base="0" gear="0" buffed="0"/>
+      <attribute name="tank_crit" base="0" gear="0" buffed="0"/>
+      <resource name="health" base="120470" buffed="453"/>
+      <resource name="mana" base="300000" buffed="300000"/>
+      <glyphs/>
+      <priorities>
+        <action index="0" value="snapshot_stats"/>
+        <action index="1" value="shadowcrawl"/>
+        <action index="2" value="wait_for_shadowcrawl"/>
+      </priorities>
+      <actions>
+        <action id="0" name="melee" count="26.731" frequency="12.783" dpe="33616" dpe_pct="100" dpet="28547.110" apr="0" pdps="27476.662">
+          <chart type="timeline_aps" href="http://5.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=melee DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAACFIMRWbgmptx13567787630vrmhbWTPKGEDCBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDFJMPTXbgknqsuvvwwwvtrokhdZVRMJGECBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCFILOSWaeimprtuvvvvvtrolieaWSOKHFDCBB&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.1231,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=429|1:|min=-0|0|avg=2287|max=18572&amp;amp;chxp=1,1,0,12,100"/>
+          <etpe>1.178</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>898577.369</actual_amount>
+          <total_amount>898577.369</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>28547.110</aps>
+          <apet>28547.110</apet>
+          <direct_results count="26.731">
+            <result type="hit" count="12.257" pct="45.855" min="31244.850" max="38567.550" avg="35868.546" avg_min="33588.214" avg_max="38110.227" actual="439661.083" total="439661.083" overkill_pct="0"/>
+            <result type="crit" count="3.989" pct="14.923" min="62489.700" max="77135.100" avg="71769.683" avg_min="0" avg_max="77135.100" actual="286288.382" total="286288.382" overkill_pct="0"/>
+            <result type="glance" count="6.409" pct="23.978" min="23433.638" max="28925.663" avg="26932.442" avg_min="23433.638" avg_max="28925.663" actual="172627.905" total="172627.905" overkill_pct="0"/>
+            <result type="dodge" count="2.081" pct="7.785" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+            <result type="miss" count="1.994" pct="7.460" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://5.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=melee DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAACFIMRWbgmptx13567787630vrmhbWTPKGEDCBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDFJMPTXbgknqsuvvwwwvtrokhdZVRMJGECBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCFILOSWaeimprtuvvvvvtrolieaWSOKHFDCBB&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.1231,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=429|1:|min=-0|0|avg=2287|max=18572&amp;chxp=1,1,0,12,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="63619" name="shadowcrawl" count="5.490" frequency="72.319" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://6.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=shadowcrawl DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=424|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>1.353</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>0</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="5.490">
+            <result type="none" count="5.490" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://6.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=shadowcrawl DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=424|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+      </actions>
+      <action_definitions>
+        <action_detail id="0" name="melee">
+          <school>shadow</school>
+          <resource>none</resource>
+          <range>5</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>1.500</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip></tooltip>
+          <description></description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>1</direct_power_mod>
+            <base min="2098.657" max="2098.657"/>
+          </direct_damage>
+          <weapon>
+            <normalize_speed>false</normalize_speed>
+            <power_mod>0.071</power_mod>
+            <multiplier>0</multiplier>
+          </weapon>
+        </action_detail>
+        <action_detail id="63619" name="shadowcrawl">
+          <school>arcane</school>
+          <resource>none</resource>
+          <range>30</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="6"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip>Damage increased by $s2%.</tooltip>
+          <description>Crawls through the shadows to the target enemy, and increases damage done by $s2% for $d.</description>
+        </action_detail>
+      </action_definitions>
+      <buffs>
+        <buff name="shadowcrawl" type="dynamic"/>
+      </buffs>
+      <benefits/>
+      <uptimes/>
+      <procs/>
+      <gains/>
+      <charts>
+        <chart type="dpet" href="http://8.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Chaosity_shadowfiend Damage Sources&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:100&amp;chds=0,100&amp;chdls=ffffff&amp;chco=9482C9&amp;chl=shadowfiend: melee&amp;"/>
+        <chart type="dmg" href="http://8.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Chaosity_shadowfiend Damage Sources&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:100&amp;chds=0,100&amp;chdls=ffffff&amp;chco=9482C9&amp;chl=shadowfiend: melee&amp;"/>
+        <chart type="time_spent" href="http://9.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Chaosity_shadowfiend Spent Time&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:22.7,40.1&amp;chds=0,100&amp;chdls=ffffff&amp;chco=69CCF0,ffffff&amp;chl=shadowcrawl 7.4s|waiting 13.1s&amp;"/>
+      </charts>
+    </player>
+    <player name="Healing Target">
+      <type>Player</type>
+      <level>90</level>
+      <race>humanoid</race>
+      <class type="unknown"/>
+      <specialization>unknown</specialization>
+      <primary_role>tank</primary_role>
+      <position>front</position>
+      <dps value="0" effective="0" error="0" range="0" convergence="0"/>
+      <dpr value="0" rps_loss="30838.548" rps_gain="45784.765" resource="health"/>
+      <waiting_time pct="0"/>
+      <active_time pct="100"/>
+      <apm>0</apm>
+      <attribute name="strength" base="0" gear="0" buffed="0"/>
+      <attribute name="agility" base="0" gear="0" buffed="0"/>
+      <attribute name="stamina" base="0" gear="0" buffed="0"/>
+      <attribute name="intellect" base="0" gear="0" buffed="0"/>
+      <attribute name="spirit" base="0" gear="0" buffed="0"/>
+      <attribute name="mastery_value" base="0" gear="0" buffed="0"/>
+      <attribute name="spellpower" base="0" gear="0" buffed="0"/>
+      <attribute name="spellhit" base="0" gear="0" buffed="0"/>
+      <attribute name="spellcrit" base="0" gear="0" buffed="0"/>
+      <attribute name="spellhaste" base="0" gear="0" buffed="inf"/>
+      <attribute name="spellspeed" base="0" gear="0" buffed="inf"/>
+      <attribute name="manareg_per_second" base="0" gear="0" buffed="0"/>
+      <attribute name="attackpower" base="0" gear="0" buffed="0"/>
+      <attribute name="attackhit" base="0" gear="0" buffed="0"/>
+      <attribute name="attackcrit" base="5" gear="0" buffed="0"/>
+      <attribute name="expertise" base="0" gear="0" buffed="0"/>
+      <attribute name="expertise_oh" base="0" gear="0" buffed="0"/>
+      <attribute name="attackhaste" base="0" gear="0" buffed="inf"/>
+      <attribute name="attackspeed" base="0" gear="0" buffed="inf"/>
+      <attribute name="armor" base="19680" gear="19680" buffed="0"/>
+      <attribute name="miss" base="3" gear="0" buffed="0"/>
+      <attribute name="dodge" base="3" gear="0" buffed="0"/>
+      <attribute name="parry" base="3" gear="0" buffed="0"/>
+      <attribute name="block" base="3" gear="0" buffed="0"/>
+      <attribute name="tank_crit" base="0" gear="0" buffed="0"/>
+      <resource name="health" base="100000000" buffed="0"/>
+      <resource name="mana" base="0" buffed="0"/>
+      <glyphs/>
+      <priorities/>
+      <actions/>
+      <action_definitions/>
+      <buffs>
+        <buff name="slowed_casting" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="magic_vulnerability" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="physical_vulnerability" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="ranged_vulnerability" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="mortal_wounds" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="weakened_armor" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="weakened_blows" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="weakened_soul" type="dynamic"/>
+        <buff name="bloodlust" type="dynamic"/>
+        <buff name="grace" type="dynamic"/>
+        <buff name="bleeding" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="Health Decade (0 - 10)" type="dynamic"/>
+        <buff name="Health Decade (10 - 20)" type="dynamic"/>
+        <buff name="Health Decade (90 - 100)" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="divine_aegis" type="dynamic"/>
+        <buff name="power_word_shield" type="dynamic"/>
+      </buffs>
+      <benefits/>
+      <uptimes/>
+      <procs/>
+      <gains>
+        <gain name="external_healing" actual="20605201.8"/>
+      </gains>
+      <charts>
+        <chart type="timeline_dps" href="http://1.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=Healing%20Target DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=539|1:|0|&amp;chxp=1,1,nan,100"/>
+      </charts>
+    </player>
+  </players>
+  <targets>
+    <player name="Fluffy_Pillow">
+      <type>Target</type>
+      <level>93</level>
+      <race>humanoid</race>
+      <class type="enemy"/>
+      <specialization>unknown</specialization>
+      <primary_role>tank</primary_role>
+      <position>front</position>
+      <dps value="30794.268" effective="30794.268" error="246.823" range="14602.732" convergence="0.622"/>
+      <waiting_time pct="150.035"/>
+      <active_time pct="100"/>
+      <apm>0.133</apm>
+      <attribute name="strength" base="0" gear="0" buffed="0"/>
+      <attribute name="agility" base="0" gear="0" buffed="0"/>
+      <attribute name="stamina" base="0" gear="0" buffed="0"/>
+      <attribute name="intellect" base="0" gear="0" buffed="0"/>
+      <attribute name="spirit" base="0" gear="0" buffed="0"/>
+      <attribute name="mastery_value" base="0" gear="0" buffed="0"/>
+      <attribute name="spellpower" base="0" gear="0" buffed="0"/>
+      <attribute name="spellhit" base="0" gear="0" buffed="0"/>
+      <attribute name="spellcrit" base="0" gear="0" buffed="0"/>
+      <attribute name="spellhaste" base="0" gear="0" buffed="0"/>
+      <attribute name="spellspeed" base="0" gear="0" buffed="0"/>
+      <attribute name="manareg_per_second" base="0" gear="0" buffed="0"/>
+      <attribute name="attackpower" base="0" gear="0" buffed="0"/>
+      <attribute name="attackhit" base="0" gear="0" buffed="0"/>
+      <attribute name="attackcrit" base="5" gear="0" buffed="5"/>
+      <attribute name="expertise" base="0" gear="0" buffed="0"/>
+      <attribute name="expertise_oh" base="0" gear="0" buffed="0"/>
+      <attribute name="attackhaste" base="0" gear="0" buffed="0"/>
+      <attribute name="attackspeed" base="0" gear="0" buffed="0"/>
+      <attribute name="armor" base="24835" gear="24835" buffed="24835"/>
+      <attribute name="miss" base="3" gear="0" buffed="3"/>
+      <attribute name="dodge" base="3" gear="0" buffed="3"/>
+      <attribute name="parry" base="3" gear="0" buffed="3"/>
+      <attribute name="block" base="3" gear="0" buffed="3"/>
+      <attribute name="tank_crit" base="0" gear="0" buffed="0"/>
+      <resource name="health" base="893549" buffed="0"/>
+      <resource name="mana" base="0" buffed="0"/>
+      <glyphs/>
+      <priorities>
+        <action index="0" list="precombat" value="snapshot_stats"/>
+        <action index="1" value="auto_attack,damage=218823,attack_speed=2.0,target=Healing Target"/>
+      </priorities>
+      <actions>
+        <action id="0" name="melee_main_hand" count="224.521" frequency="2" dpe="61803" dpe_pct="100" dpet="30901.688" apr="0" pdps="30794.268">
+          <chart type="timeline_aps" href="http://8.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=melee_main_hand DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:JJJJJJJJKKKKKKHHCCCCCCCCCCDDDDDDEEFFHHLLNNQQUUXXYYYYXXVVTTSSSSRRPPOOPPSSUUWWWWVVTTRRQQPPOONNNNOOQQSSUUVVVVUUTTSSRRPPNNMMMMMMNNNNNNMMMMLLLLKKJJJJKKLLNNQQSSVVYYaabbbbaaZZYYYYXXWWWWWWZZbbeeggjjmmoorrttuuvvwwyyzzzzzzyyxxvvttrrookkhheeccbbaaaaZZZZaaaaaaaaYYWWUUSSSSSSTTUUXXaaffjjnnrruuxxzz001122222222110000zzzzzzyyyyxxxxyyyyzzzz000011112233333333333322222211111100zzxxvvttrrqqoommmmmmnnoorrttvvxxzz11447788777777775511wwqqkkffccZZVVSSRRRRTTUUVVUUTTSSSSSSRRQQQQQQSSUUWWYYaaccffiijjjjjjiiiiggffccZZXXWWWWXXYYaaddhhkkoorrttxxyy00111100yyssnniiccW&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.5239,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=539|1:|0|avg=31298|max=59744&amp;amp;chxp=1,1,52,100"/>
+          <etpe>2</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>13876125.050</actual_amount>
+          <total_amount>13876125.050</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>30901.688</aps>
+          <apet>30901.688</apet>
+          <direct_results count="224.521">
+            <result type="hit" count="213.512" pct="95.097" min="0" max="157953.475" avg="57803.018" avg_min="29007.019" avg_max="81621.018" actual="12338734.806" total="12338734.806" overkill_pct="0"/>
+            <result type="crit" count="11.009" pct="4.903" min="0" max="315906.950" avg="139597.163" avg_min="0" avg_max="274255.773" actual="1537390.244" total="1537390.244" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://8.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=melee_main_hand DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:JJJJJJJJKKKKKKHHCCCCCCCCCCDDDDDDEEFFHHLLNNQQUUXXYYYYXXVVTTSSSSRRPPOOPPSSUUWWWWVVTTRRQQPPOONNNNOOQQSSUUVVVVUUTTSSRRPPNNMMMMMMNNNNNNMMMMLLLLKKJJJJKKLLNNQQSSVVYYaabbbbaaZZYYYYXXWWWWWWZZbbeeggjjmmoorrttuuvvwwyyzzzzzzyyxxvvttrrookkhheeccbbaaaaZZZZaaaaaaaaYYWWUUSSSSSSTTUUXXaaffjjnnrruuxxzz001122222222110000zzzzzzyyyyxxxxyyyyzzzz000011112233333333333322222211111100zzxxvvttrrqqoommmmmmnnoorrttvvxxzz11447788777777775511wwqqkkffccZZVVSSRRRRTTUUVVUUTTSSSSSSRRQQQQQQSSUUWWYYaaccffiijjjjjjiiiiggffccZZXXWWWWXXYYaaddhhkkoorrttxxyy00111100yyssnniiccW&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.5239,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=539|1:|0|avg=31298|max=59744&amp;chxp=1,1,52,100"/>
+          <target>Healing Target</target>
+        </action>
+      </actions>
+      <action_definitions>
+        <action_detail id="0" name="melee_main_hand">
+          <school>physical</school>
+          <resource>none</resource>
+          <range>5</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>2</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Healing Target</target>
+          <tooltip></tooltip>
+          <description></description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>0</direct_power_mod>
+            <base min="218823" max="218823"/>
+          </direct_damage>
+          <weapon>
+            <normalize_speed>false</normalize_speed>
+            <power_mod>0.071</power_mod>
+            <multiplier>1</multiplier>
+          </weapon>
+        </action_detail>
+      </action_definitions>
+      <buffs>
+        <buff name="slowed_casting" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="magic_vulnerability" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="physical_vulnerability" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="ranged_vulnerability" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="mortal_wounds" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="weakened_armor" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="weakened_blows" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="bleeding" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="Health Decade (0 - 10)" type="dynamic"/>
+        <buff name="Health Decade (10 - 20)" type="dynamic"/>
+        <buff name="Health Decade (20 - 30)" type="dynamic"/>
+        <buff name="Health Decade (30 - 40)" type="dynamic"/>
+        <buff name="Health Decade (40 - 50)" type="dynamic"/>
+        <buff name="Health Decade (50 - 60)" type="dynamic"/>
+        <buff name="Health Decade (60 - 70)" type="dynamic"/>
+        <buff name="Health Decade (70 - 80)" type="dynamic"/>
+        <buff name="Health Decade (80 - 90)" type="dynamic"/>
+        <buff name="Health Decade (90 - 100)" type="dynamic"/>
+      </buffs>
+      <benefits/>
+      <uptimes/>
+      <procs/>
+      <gains/>
+      <charts>
+        <chart type="dpet" href="http://0.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Fluffy_Pillow Damage Sources&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:100&amp;chds=0,100&amp;chdls=ffffff&amp;chco=C79C6E&amp;chl=melee_main_hand&amp;"/>
+        <chart type="dmg" href="http://0.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Fluffy_Pillow Damage Sources&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:100&amp;chds=0,100&amp;chdls=ffffff&amp;chco=C79C6E&amp;chl=melee_main_hand&amp;"/>
+        <chart type="timeline_dps" href="http://2.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=Fluffy_Pillow DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:JJJJJJJJKKKKKKHHCCCCCCCCCCDDDDDDEEFFHHLLNNQQUUXXYYYYXXVVTTSSSSRRPPOOPPSSUUWWWWVVTTRRQQPPOONNNNOOQQSSUUVVVVUUTTSSRRPPNNMMMMMMNNNNNNMMMMLLLLKKJJJJKKLLNNQQSSVVYYaabbbbaaZZYYYYXXWWWWWWZZbbeeggjjmmoorrttuuvvwwyyzzzzzzyyxxvvttrrookkhheeccbbaaaaZZZZaaaaaaaaYYWWUUSSSSSSTTUUXXaaffjjnnrruuxxzz001122222222110000zzzzzzyyyyxxxxyyyyzzzz000011112233333333333322222211111100zzxxvvttrrqqoommmmmmnnoorrttvvxxzz11447788777777775511wwqqkkffccZZVVSSRRRRTTUUVVUUTTSSSSSSRRQQQQQQSSUUWWYYaaccffiijjjjjjiiiiggffccZZXXWWWWXXYYaaddhhkkoorrttxxyy00111100yyssnniiccW&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.5154,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=539|1:|0|avg=30794|max=59744&amp;chxp=1,1,52,100"/>
+        <chart type="distribution_dps" href="http://5.chart.apis.google.com/chart?cht=bvs&amp;chf=bg,s,333333&amp;chtt=Fluffy_Pillow DPS Distribution&amp;chts=dddddd,18&amp;chs=550x185&amp;chg=20,20&amp;chxs=0,FFFFFF&amp;chd=t:1,0,0,0,1,0,1,1,1,3,4,2,3,6,1,9,5,14,27,27,32,25,42,46,49,63,61,61,58,59,48,54,52,35,40,34,32,28,22,14,9,5,12,3,1,1,3,1,1,2&amp;chds=0,63&amp;chbh=5&amp;chxt=x&amp;chxl=0:|min=14224|avg=30794|max=43429&amp;chxp=0,1,57,100&amp;"/>
+        <chart type="time_spent" href="http://1.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Fluffy_Pillow Spent Time&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:150.0&amp;chds=0,100&amp;chdls=ffffff&amp;chco=ffffff&amp;chl=waiting 675.2s&amp;"/>
+      </charts>
+    </player>
+  </targets>
+  <buffs>
+    <buff name="attack_speed" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+    <buff name="attack_power_multiplier" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+    <buff name="critical_strike" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+    <buff name="mastery" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+    <buff name="spell_haste" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+    <buff name="spell_power_multiplier" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+    <buff name="stamina" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+    <buff name="str_agi_int" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+  </buffs>
+  <performance>
+    <total_events>3761765</total_events>
+    <max_event_queue>36</max_event_queue>
+    <target_health>893549</target_health>
+    <sim_seconds>450045</sim_seconds>
+    <cpu_seconds>0.874</cpu_seconds>
+    <speed_up>514926</speed_up>
+  </performance>
+</simulationcraft>

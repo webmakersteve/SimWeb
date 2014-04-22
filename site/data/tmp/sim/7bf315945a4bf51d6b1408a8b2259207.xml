@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<simulationcraft major_version="530" minor_version="6" wow_version="5.3.0" ptr="false" wow_build="17116">
+  <config>
+    <style>not-specified</style>
+    <has_scale_factors>false</has_scale_factors>
+    <report_pets_separately>false</report_pets_separately>
+    <report_details>true</report_details>
+    <report_targets>true</report_targets>
+    <report_raw_abilities>true</report_raw_abilities>
+    <normalize_scale_factors>false</normalize_scale_factors>
+  </config>
+  <summary>
+    <timestamp>Mon Apr 21 14:39:15 2014
+</timestamp>
+    <iterations>1000</iterations>
+    <threads>1</threads>
+    <confidence>95</confidence>
+    <simulation_length mean="452" min="320" max="582" total="451738"/>
+    <events processed="6653906" max_remaining="71"/>
+    <fight_style>Patchwerk</fight_style>
+    <elapsed_cpu_sec>2.045</elapsed_cpu_sec>
+    <lag type="world" value="100" stddev="10"/>
+    <lag type="queue" value="37" stddev="9"/>
+    <charts max_players_per_chart="20">
+      <chart type="dps" img_src="http://1.chart.apis.google.com/chart?cht=bhg&amp;chf=bg,s,333333&amp;chtt=DPS Ranking&amp;chts=dddddd,18&amp;chs=550x40&amp;chbh=15&amp;chd=t:197187&amp;chds=0,492968&amp;chco=69CCF0&amp;chm=t++197187++Breyada,69CCF0,0,0,15&amp;"/>
+      <chart type="gear" img_src="http://3.chart.apis.google.com/chart?cht=bhs&amp;chf=bg,s,333333&amp;chtt=Gear Overview&amp;chts=dddddd,18&amp;chs=550x120&amp;chxs=0,FFFFFF&amp;chbh=15&amp;chd=t:80|80|16723|80|8271|0|0|5098|3450|13135|6800|15780|0|0&amp;chds=0,69497&amp;chco=C79C6E,ABD473,69CCF0,8A8A8A,9482C9,FFF569,C5DDD4,C41F3B,F58CBA,0070DE,FFF569,FFFFFF,00FF96,009090&amp;chxt=y&amp;chxl=0:|Breyada&amp;chdl=Str|Agi|Int|Spi|SP|AP|Exp|Hit|Crit|Haste|Mastery|Armor|Dodge|Parry&amp;chdlp=t&amp;chdls=dddddd,12&amp;"/>
+      <chart type="dpet" img_src="http://2.chart.apis.google.com/chart?chs=500x155&amp;cht=bhg&amp;chf=bg,s,333333&amp;chbh=10&amp;chd=t:838791|489926|475242|353404|306812|232641|231663|201482|99288&amp;chds=0,2096977&amp;chco=69CCF0,62480C,0070DE,C41F3B,0070DE,62480C,0070DE,0070DE,0070DE&amp;chm=t++838791++mirror_image+(Breyada),69CCF0,0,0,10|t++489926++mini_frostfire_bolt+(Breyada),69CCF0,1,0,10|t++475242++mini_ice_lance+(Breyada),69CCF0,2,0,10|t++353404++living_bomb+(Breyada),69CCF0,3,0,10|t++306812++frozen_orb+(Breyada),69CCF0,4,0,10|t++232641++frostfire_bolt+(Breyada),69CCF0,5,0,10|t++231663++ice_lance+(Breyada),69CCF0,6,0,10|t++201482++mini_frostbolt+(Breyada),69CCF0,7,0,10|t++99288++frostbolt+(Breyada),69CCF0,8,0,10&amp;chtt=Raid Damage Per Execute Time&amp;chts=dddddd,18&amp;"/>
+    </charts>
+    <dmg total="88854240" dps="197187"/>
+    <heal total="0" hps="0"/>
+    <player_by_dps>
+      <player name="Breyada" index="0" dps="197187.024"/>
+    </player_by_dps>
+    <player_by_hps>
+      <player name="Breyada" index="0" hps="0"/>
+    </player_by_hps>
+  </summary>
+  <players>
+    <player name="Breyada">
+      <type>Player</type>
+      <level>90</level>
+      <race>blood_elf</race>
+      <class type="mage"/>
+      <specialization>frost</specialization>
+      <primary_role>spell</primary_role>
+      <position>back</position>
+      <dps value="197187.024" effective="197187.024" error="496.650" range="26880.314" convergence="0.678"/>
+      <dpr value="23.856" rps_loss="6767.780" rps_gain="6433.549" resource="mana"/>
+      <waiting_time pct="0"/>
+      <active_time pct="100"/>
+      <apm>53.053</apm>
+      <origin>http://us.battle.net/wow/en/character/maelstrom/breyada/advanced</origin>
+      <talents_url>http://us.battle.net/wow/en/tool/talent-calculator#eb!200010</talents_url>
+      <attribute name="strength" base="116" gear="116" buffed="122"/>
+      <attribute name="agility" base="130" gear="130" buffed="137"/>
+      <attribute name="stamina" base="24324" gear="24324" buffed="26756"/>
+      <attribute name="intellect" base="17787" gear="16951" buffed="20462"/>
+      <attribute name="spirit" base="285" gear="285" buffed="285"/>
+      <attribute name="mastery_value" base="0" gear="6800" buffed="0"/>
+      <attribute name="spellpower" base="27395" gear="9618" buffed="33077"/>
+      <attribute name="spellhit" base="15" gear="5098" buffed="15"/>
+      <attribute name="spellcrit" base="14" gear="3450" buffed="20"/>
+      <attribute name="spellhaste" base="31" gear="13135" buffed="47"/>
+      <attribute name="spellspeed" base="31" gear="13135" buffed="47"/>
+      <attribute name="manareg_per_second" base="3927" gear="0" buffed="4412"/>
+      <attribute name="attackpower" base="96" gear="-10" buffed="112"/>
+      <attribute name="attackhit" base="15" gear="5098" buffed="15"/>
+      <attribute name="attackcrit" base="9" gear="3450" buffed="14"/>
+      <attribute name="expertise" base="0" gear="0" buffed="0"/>
+      <attribute name="expertise_oh" base="0" gear="0" buffed="0"/>
+      <attribute name="attackhaste" base="31" gear="13135" buffed="31"/>
+      <attribute name="attackspeed" base="31" gear="13135" buffed="44"/>
+      <attribute name="armor" base="15780" gear="15780" buffed="15780"/>
+      <attribute name="miss" base="0" gear="0" buffed="0"/>
+      <attribute name="dodge" base="0" gear="0" buffed="0"/>
+      <attribute name="parry" base="0" gear="0" buffed="0"/>
+      <attribute name="block" base="0" gear="0" buffed="0"/>
+      <attribute name="tank_crit" base="0" gear="0" buffed="0"/>
+      <resource name="health" base="486939" buffed="122"/>
+      <resource name="mana" base="300000" buffed="300000"/>
+      <glyphs>
+        <glyph name="splitting_ice"/>
+        <glyph name="icy_veins"/>
+        <glyph name="water_elemental"/>
+        <glyph name="momentum"/>
+        <glyph name="evaporation"/>
+        <glyph name="unbound_elemental"/>
+      </glyphs>
+      <priorities>
+        <action index="0" list="precombat" value="flask,type=warm_sun"/>
+        <action index="1" list="precombat" value="food,type=mogu_fish_stew"/>
+        <action index="2" list="precombat" value="arcane_brilliance"/>
+        <action index="3" list="precombat" value="frost_armor"/>
+        <action index="4" list="precombat" value="water_elemental"/>
+        <action index="5" list="precombat" value="snapshot_stats"/>
+        <action index="6" list="precombat" value="evocation"/>
+        <action index="7" list="precombat" value="jade_serpent_potion"/>
+        <action index="8" list="precombat" value="mirror_image"/>
+        <action index="9" value="counterspell,if=target.debuff.casting.react"/>
+        <action index="10" value="cancel_buff,name=alter_time,moving=1"/>
+        <action index="11" value="conjure_mana_gem,if=mana_gem_charges&lt;3&amp;target.debuff.invulnerable.react"/>
+        <action index="12" value="time_warp,if=target.health.pct&lt;25|time&gt;5"/>
+        <action index="13" value="evocation,if=(buff.invokers_energy.down|mana.pct&lt;20)&amp;buff.alter_time.down"/>
+        <action index="14" value="evocation,if=cooldown.icy_veins.remains=0&amp;buff.invokers_energy.remains&lt;20"/>
+        <action index="15" value="mirror_image"/>
+        <action index="16" value="frozen_orb,if=!buff.fingers_of_frost.react"/>
+        <action index="17" value="icy_veins,if=(debuff.frostbolt.stack&gt;=3&amp;(buff.brain_freeze.react|buff.fingers_of_frost.react))|target.time_to_die&lt;22,moving=0"/>
+        <action index="18" value="jade_serpent_potion,if=buff.icy_veins.up|target.time_to_die&lt;45"/>
+        <action index="19" value="alter_time,if=buff.alter_time.down&amp;buff.icy_veins.up"/>
+        <action index="20" value="flamestrike,if=active_enemies&gt;=5"/>
+        <action index="21" value="frostfire_bolt,if=buff.alter_time.up&amp;buff.brain_freeze.up"/>
+        <action index="22" value="ice_lance,if=buff.alter_time.up&amp;buff.fingers_of_frost.up"/>
+        <action index="23" value="living_bomb,cycle_targets=1,if=(!ticking|remains&lt;tick_time)&amp;target.time_to_die&gt;tick_time*3"/>
+        <action index="24" value="frostbolt,if=debuff.frostbolt.stack&lt;3"/>
+        <action index="25" value="frostfire_bolt,if=buff.brain_freeze.react&amp;cooldown.icy_veins.remains&gt;2"/>
+        <action index="26" value="ice_lance,if=buff.fingers_of_frost.react&amp;cooldown.icy_veins.remains&gt;2"/>
+        <action index="27" value="frostbolt"/>
+        <action index="28" value="ice_floes,moving=1"/>
+        <action index="29" value="fire_blast,moving=1"/>
+        <action index="30" value="ice_lance,moving=1"/>
+      </priorities>
+      <actions>
+        <action id="108978" name="alter_time_activate" count="2.989" frequency="181.233" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://5.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=alter_time_activate DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=556|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>0</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="2.989">
+            <result type="none" count="2.989" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://5.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=alter_time_activate DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=556|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="12051" name="evocation" count="7.472" frequency="56.850" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://6.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=evocation DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=569|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>2.070</etpe>
+          <ttpt>0.456</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>0</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="7.472">
+            <result type="none" count="7.472" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <tick_results count="29.846" ticks="29.846">
+            <result type="hit" count="24.050" pct="80.581" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+            <result type="crit" count="5.796" pct="19.419" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </tick_results>
+          <chart type="timeline_stat_aps" href="http://6.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=evocation DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=569|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="116" name="frostbolt" count="170.715" frequency="2.619" dpe="124361" dpe_pct="19.044" dpet="99287.850" apr="8.879" pdps="37412.259">
+          <chart type="timeline_aps" href="http://8.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=frostbolt DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:llllllllllllllfYQIAAAAAAAEHKLORVZcgjnqtwyz26865577641xurpommnnmlkjjjkklmoruwxxxyz0123555432111122343210zzyyz00110ywtrqppppppponmmmmnoqsvxyyyyz0123454432111111233210zzzzz0010ywurprsrpoljgebYVSQNNMMLKGCAAAAABEHKNPSUWZcfiloqtvxz1000001111zxvtsrrrrrrqponnnnnoqsuvwxxxyz0112322100zz00111100zzzzz0112210ywutsssssrqponnnnopqsuvwwwxxyz011222100000011221110000120zzyxwvvtrpnkigdaXURQPNLJHFCBAAAABDFIKNQSVXadgjmpsuxz01112233343210yxvvuuttrqponnnnnopqsttuuvwxyz0011100zzz00011100000111223210zxvutsrrqponmmlllmmnprsttuvwxy00111121111223344433223210z0zzzyxvspmkifcaWUTSPMKHECBAAAAAAAEKQQQQQQQQQQQ&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.6870,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=583|1:|min=-0|0|avg=36405|max=52988&amp;amp;chxp=1,1,0,69,100"/>
+          <etpe>1.253</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>16921538.023</actual_amount>
+          <total_amount>16921538.023</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>99287.850</aps>
+          <apet>99287.850</apet>
+          <direct_results count="170.285">
+            <result type="hit" count="137.257" pct="80.604" min="59503.392" max="136322.414" avg="82300.672" avg_min="75625.793" avg_max="91286.557" actual="11296262.223" total="11296262.223" overkill_pct="0"/>
+            <result type="crit" count="33.017" pct="19.389" min="119006.785" max="303823.126" avg="170378.170" avg_min="148794.182" avg_max="197845.613" actual="5625275.800" total="5625275.800" overkill_pct="0"/>
+            <result type="miss" count="0.011" pct="0.006" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://8.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=frostbolt DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:llllllllllllllfYQIAAAAAAAEHKLORVZcgjnqtwyz26865577641xurpommnnmlkjjjkklmoruwxxxyz0123555432111122343210zzyyz00110ywtrqppppppponmmmmnoqsvxyyyyz0123454432111111233210zzzzz0010ywurprsrpoljgebYVSQNNMMLKGCAAAAABEHKNPSUWZcfiloqtvxz1000001111zxvtsrrrrrrqponnnnnoqsuvwxxxyz0112322100zz00111100zzzzz0112210ywutsssssrqponnnnopqsuvwwwxxyz011222100000011221110000120zzyxwvvtrpnkigdaXURQPNLJHFCBAAAABDFIKNQSVXadgjmpsuxz01112233343210yxvvuuttrqponnnnnopqsttuuvwxyz0011100zzz00011100000111223210zxvutsrrqponmmlllmmnprsttuvwxy00111121111223344433223210z0zzzyxvspmkifcaWUTSPMKHECBAAAAAAAEKQQQQQQQQQQQ&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.6870,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=583|1:|min=-0|0|avg=36405|max=52988&amp;chxp=1,1,0,69,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="44614" name="frostfire_bolt" count="47.846" frequency="8.600" dpe="308616" dpe_pct="11.288" dpet="232641.395" apr="0" pdps="22187.537">
+          <chart type="timeline_aps" href="http://9.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=frostfire_bolt DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAEGINRUYbehloqsvy13577786430zzyyxxxwvuuuutssrrrtsqqpqqqqqrrrrqqrrrrqrrrrrqqpppppppppppponoooppqqqqqqppppqpqrrrqqqqqqqqqqrrrrqqqqqqqrqqqppppppppppqpnnnoomkigecaYWUSPNLJJHFCAAAAAAAAAACFHJLOQTVYacfhikmoqssssssrrqpoooooppppppoooopoppqrrrrqrrrrrssttsrrrrrrrrrrrrrqrrrqrrrrrrrqqqqqrrrsrrrrrrrrrrrsssrrrrqqqqqrrrrrrrrrrsssssssssssssssrqrrqqonljgecaYVTRPMLJHFDBAAAAAAAAACDGIKMPRUWZbdfhjlnprsssssrrrrqqppqqqqrqqqqqqrrrrrrrrrrrrrrrrsrrrrrrrrqrrsrrrqrrrqqrrrsssrrrqqrrrrrrssrssrqqqqrqrrqqqrrrqqqpqqrsrrqppqpoonnooppqpppoopqrrqonljgebZWUSQ&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.6036,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=551|1:|min=-0|0|avg=22670|max=37558&amp;amp;chxp=1,1,0,60,100"/>
+          <etpe>1.327</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>10029863.321</actual_amount>
+          <total_amount>10029863.321</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>232641.395</aps>
+          <apet>232641.395</apet>
+          <direct_results count="47.780">
+            <result type="hit" count="5.449" pct="11.405" min="91865.776" max="151194.878" avg="102867.786" avg_min="0" avg_max="134067.147" actual="560574.846" total="560574.846" overkill_pct="0"/>
+            <result type="crit" count="42.327" pct="88.588" min="183731.552" max="385375.822" avg="223710.733" avg_min="194498.503" avg_max="252553.894" actual="9469288.475" total="9469288.475" overkill_pct="0"/>
+            <result type="miss" count="0.003" pct="0.006" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://9.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=frostfire_bolt DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAEGINRUYbehloqsvy13577786430zzyyxxxwvuuuutssrrrtsqqpqqqqqrrrrqqrrrrqrrrrrqqpppppppppppponoooppqqqqqqppppqpqrrrqqqqqqqqqqrrrrqqqqqqqrqqqppppppppppqpnnnoomkigecaYWUSPNLJJHFCAAAAAAAAAACFHJLOQTVYacfhikmoqssssssrrqpoooooppppppoooopoppqrrrrqrrrrrssttsrrrrrrrrrrrrrqrrrqrrrrrrrqqqqqrrrsrrrrrrrrrrrsssrrrrqqqqqrrrrrrrrrrsssssssssssssssrqrrqqonljgecaYVTRPMLJHFDBAAAAAAAAACDGIKMPRUWZbdfhjlnprsssssrrrrqqppqqqqrqqqqqqrrrrrrrrrrrrrrrrsrrrrrrrrqrrsrrrqrrrqqrrrsssrrrqqrrrrrrssrssrqqqqrqrrqqqrrrqqqpqqrsrrqppqpoonnooppqpppoopqrrqonljgebZWUSQ&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.6036,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=551|1:|min=-0|0|avg=22670|max=37558&amp;chxp=1,1,0,60,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="84714" name="frozen_orb" count="7.928" frequency="61.171" dpe="321753" dpe_pct="2.871" dpet="306811.982" apr="10.725" pdps="5660.521">
+          <chart type="timeline_aps" href="http://0.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=frozen_orb DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:888888888883zuoicVOHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGKOSWbfjopqrrrrrrrrplhdZUQMHDBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGJNRVaejmoqqrrrrrrqolhdZVRMIECBAAAAAAAAAAAAAAAAAAAAAAAAAAAAACFJNRWbglqtvwxxxyyyxvtplhcXRMIFDBBAAAAAAAAAAAAAAAAAAAAAAAAAABDFIMQUYcgkmopqqqqrqqolieaWSOKHECBBAAAAAAAAAAAAAAAAAAAAAAAAAABDFIMQUYcgkmopqqrrrrqolifbXSOKHEDBBAAAAAAAAAAAAAAAAAAAAAAAAAABDGJMQUYchknpqsttuuutrolieaWRNKHFDCBBAAAAAAAAAAAAAAAAAAAAAAAABDFIMPTXbfikmnopqqqqpnlifbXUPMJGEDCBAAAAAAAAAAAAAAAAAAAAAAAAABDFILOSWZdgjlmnoppppomkhebXUQMJGEDCBBAAAAAAAAAAAAAAAAAAAAAAAABCEGJMQTXbfjkmnopppqpomkheaWTP&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.2615,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=568|1:|0|avg=5466|max=20900&amp;amp;chxp=1,1,26,100"/>
+          <etpe>1.049</etpe>
+          <ttpt>1</ttpt>
+          <actual_amount>2550834.821</actual_amount>
+          <total_amount>2550834.821</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>29504.769</aps>
+          <apet>306811.982</apet>
+          <direct_results count="7.928">
+            <result type="hit" count="7.928" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <tick_results count="78.140" ticks="78.140">
+            <result type="hit" count="62.533" pct="80.026" min="18460.414" max="42116.642" avg="26358.965" avg_min="23366.938" avg_max="30961.547" actual="1648133.762" total="1648133.762" overkill_pct="0"/>
+            <result type="crit" count="15.603" pct="19.967" min="36920.827" max="101079.940" avg="57865.320" avg_min="46443.298" avg_max="71348.908" actual="902701.059" total="902701.059" overkill_pct="0"/>
+            <result type="miss" count="0.005" pct="0.006" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </tick_results>
+          <chart type="timeline_stat_aps" href="http://0.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=frozen_orb DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:888888888883zuoicVOHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGKOSWbfjopqrrrrrrrrplhdZUQMHDBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGJNRVaejmoqqrrrrrrqolhdZVRMIECBAAAAAAAAAAAAAAAAAAAAAAAAAAAAACFJNRWbglqtvwxxxyyyxvtplhcXRMIFDBBAAAAAAAAAAAAAAAAAAAAAAAAAABDFIMQUYcgkmopqqqqrqqolieaWSOKHECBBAAAAAAAAAAAAAAAAAAAAAAAAAABDFIMQUYcgkmopqqrrrrqolifbXSOKHEDBBAAAAAAAAAAAAAAAAAAAAAAAAAABDGJMQUYchknpqsttuuutrolieaWRNKHFDCBBAAAAAAAAAAAAAAAAAAAAAAAABDFIMPTXbfikmnopqqqqpnlifbXUPMJGEDCBAAAAAAAAAAAAAAAAAAAAAAAAABDFILOSWZdgjlmnoppppomkhebXUQMJGEDCBBAAAAAAAAAAAAAAAAAAAAAAAABCEGJMQTXbfjkmnopppqpomkheaWTP&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.2615,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=568|1:|0|avg=5466|max=20900&amp;chxp=1,1,26,100"/>
+          <target>Fluffy_Pillow</target>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="30455" name="ice_lance" count="76.568" frequency="5.813" dpe="242033" dpe_pct="12.622" dpet="231662.560" apr="80.675" pdps="24800.724">
+          <chart type="timeline_aps" href="http://1.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=ice_lance DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAADEGIKMORUWYabcefhiklkkkjjihhilpruwz124556666677740wtqomljihgggggggfffggggffeedddddccdcccdgjmpsvx023566666777630xuspnljihggggfffeeeeeeeddddccccddddcccegigfdcbZYWVTRPOMMLJGCAAAAAAAAABDFHIKMNPQSTVXYabcefffeeffffefgjmoruwy023566677787630xusqonkjhgggfeeedddeeeeeeeedeeeeeffffghjlortvy023456777777531yvtromkjihgfeeeddddddddedeeedddeedeeeffedbaYXVUSQPNMKKIGFCBAAAAAAAABCEGHJKMNPRSUVXYabdeeeeeeeeeeeefgiloqsuwz02334666776531ywtspnmljjihggffgffffgffffeeeeeffgggghikmoruwy02335566665532zxurpnmjiigfedcccccbccccccccccbbbbcbbbZZXWVUTRPONLKJIGFEDCCAAAAAAAAAAHHHHHHHHHHH&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.5109,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=581|1:|0|avg=24113|max=47200&amp;amp;chxp=1,1,51,100"/>
+          <etpe>1.045</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>11215499.452</actual_amount>
+          <total_amount>11215499.452</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>231662.560</aps>
+          <apet>231662.560</apet>
+          <direct_results count="55.931">
+            <result type="hit" count="6.398" pct="11.440" min="88036.315" max="144222.461" avg="98364.382" avg_min="0" avg_max="123923.128" actual="629367.951" total="629367.951" overkill_pct="0"/>
+            <result type="crit" count="49.527" pct="88.549" min="176072.630" max="380102.603" avg="213742.792" avg_min="192391.193" avg_max="239673.521" actual="10586131.501" total="10586131.501" overkill_pct="0"/>
+            <result type="miss" count="0.006" pct="0.011" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://1.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=ice_lance DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAADEGIKMORUWYabcefhiklkkkjjihhilpruwz124556666677740wtqomljihgggggggfffggggffeedddddccdcccdgjmpsvx023566666777630xuspnljihggggfffeeeeeeeddddccccddddcccegigfdcbZYWVTRPOMMLJGCAAAAAAAAABDFHIKMNPQSTVXYabcefffeeffffefgjmoruwy023566677787630xusqonkjhgggfeeedddeeeeeeeedeeeeeffffghjlortvy023456777777531yvtromkjihgfeeeddddddddedeeedddeedeeeffedbaYXVUSQPNMKKIGFCBAAAAAAAABCEGHJKMNPRSUVXYabdeeeeeeeeeeeefgiloqsuwz02334666776531ywtspnmljjihggffgffffgffffeeeeeffgggghikmoruwy02335566665532zxurpnmjiigfedcccccbccccccccccbbbbcbbbZZXWVUTRPONLKJIGFEDCCAAAAAAAAAAHHHHHHHHHHH&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.5109,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=581|1:|0|avg=24113|max=47200&amp;chxp=1,1,51,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="12472" name="icy_veins" count="2.989" frequency="181.229" dpe="0" dpe_pct="0" dpet="0" apr="0" pdps="0">
+          <chart type="timeline_aps" href="http://2.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=icy_veins DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=556|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>0</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="2.989">
+            <result type="none" count="2.989" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://2.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=icy_veins DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=556|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="44457" name="living_bomb" count="37.448" frequency="12.171" dpe="366338" dpe_pct="14.593" dpet="353403.784" apr="81.407" pdps="28742.042">
+          <chart type="timeline_aps" href="http://3.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=living_bomb DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:KMMQVXbdgloswuyz0142568654331zyvuvtrtrqrpopomnmmmlllkjjihhhggfeeddccbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaabbbbbbbbbaabababbaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccddeffgghhiiijjjjkkkkjjjiiihhhgggggfffeeeddddcccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcbccccccccccddddeeeeeeeeefffeeeeeeeedddddddddddddccccccccccbbbbbbbbbbbbbbbbbbbbbbbabbbbbabbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbcccccdcccdcbcbcaZXWUTRQON&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.4866,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=583|1:|0|avg=27918|max=57372&amp;amp;chxp=1,1,49,100"/>
+          <etpe>1.037</etpe>
+          <ttpt>1.756</ttpt>
+          <actual_amount>12966597.125</actual_amount>
+          <total_amount>12966597.125</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>28152.871</aps>
+          <apet>353403.784</apet>
+          <direct_results count="37.448">
+            <result type="hit" count="37.445" pct="99.992" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+            <result type="miss" count="0.003" pct="0.008" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <tick_results count="255.352" ticks="255.352">
+            <result type="hit" count="203.398" pct="79.654" min="33390.608" max="66237.825" avg="41159.056" avg_min="37956.391" avg_max="46354.006" actual="8371230.532" total="8371230.532" overkill_pct="0"/>
+            <result type="crit" count="51.954" pct="20.346" min="66781.217" max="158970.780" avg="88451.056" avg_min="79335.315" avg_max="101508.793" actual="4595366.594" total="4595366.594" overkill_pct="0"/>
+          </tick_results>
+          <chart type="timeline_stat_aps" href="http://3.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=living_bomb DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:KMMQVXbdgloswuyz0142568654331zyvuvtrtrqrpopomnmmmlllkjjihhhggfeeddccbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaabbbbbbbbbaabababbaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccddeffgghhiiijjjjkkkkjjjiiihhhgggggfffeeeddddcccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcbccccccccccddddeeeeeeeeefffeeeeeeeedddddddddddddccccccccccbbbbbbbbbbbbbbbbbbbbbbbabbbbbabbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbcccccdcccdcbcbcaZXWUTRQON&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.4866,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=583|1:|0|avg=27918|max=57372&amp;chxp=1,1,49,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="44461" name="living_bomb_explosion" count="37.445" frequency="12.055" dpe="20087" dpe_pct="0.847" dpet="0" apr="0" pdps="1666.499">
+          <chart type="timeline_aps" href="http://4.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=living_bomb_explosion DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AALQQQQQQQQQQRVdddddddRNNQWXXXXXXWSKLNRTTTTTTQKJKNPSTTTTRPMKLNPSSTTSSONKKNPRSSSSQOMKKMOQSSSSRPNKKLOQRSSSRPNLKLNORSSSSQOMLLNPRSSSSQPNLLMOQRSSSQPNLLMOQRSSSRPNMLMNPRSSSRQOMLLMOQRSSSQONLLMPSUVVVVTRPPQTVWXYXXVSQPQSTVWWWVSQONOQSTTTTSQOMMMOPRSSSRPNLLMOPRSSSRPONMMNPRSSSRQONLMNPQRSSRQONLLNOQRSSSQPNMMMOPRSSSRQOMMNOPRSSSRQPNMMNPQRSSRQPNMMNOQRSSRQPONMNOPQSSSRQONNNOPRSSSSRPONNPQSTUUTSRQQPRSTUUVUTSQPPQRSTUTTSRQPPQRSSTSSRQPOOOQRSSSRRPOOOPQRSTSSRQPPPPQRSTTSSRQPPPQRRSSSRQQPOOPQRSSSRQPPOOPQRSSSSRQQPPPRRSTTTSRRQQQQRSTTSSRQQQQRSSTUUUTTSSSSTUVWWVVUUTTUWWXXYYYXXXYYYabdhkomjhhjimnnpomnmsq83zuuuutrpm&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.3045,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=583|1:|0|avg=1832|max=6015&amp;amp;chxp=1,1,30,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>752184.356</actual_amount>
+          <total_amount>752184.356</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="37.445">
+            <result type="hit" count="29.973" pct="80.044" min="11060.271" max="26494.165" avg="16323.488" avg_min="14830.761" avg_max="18568.929" actual="489237.686" total="489237.686" overkill_pct="0"/>
+            <result type="crit" count="7.470" pct="19.950" min="23226.570" max="63585.995" avg="35198.712" avg_min="27331.577" avg_max="52109.506" actual="262946.669" total="262946.669" overkill_pct="0"/>
+            <result type="miss" count="0.002" pct="0.005" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://4.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=living_bomb_explosion DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AALQQQQQQQQQQRVdddddddRNNQWXXXXXXWSKLNRTTTTTTQKJKNPSTTTTRPMKLNPSSTTSSONKKNPRSSSSQOMKKMOQSSSSRPNKKLOQRSSSRPNLKLNORSSSSQOMLLNPRSSSSQPNLLMOQRSSSQPNLLMOQRSSSRPNMLMNPRSSSRQOMLLMOQRSSSQONLLMPSUVVVVTRPPQTVWXYXXVSQPQSTVWWWVSQONOQSTTTTSQOMMMOPRSSSRPNLLMOPRSSSRPONMMNPRSSSRQONLMNPQRSSRQONLLNOQRSSSQPNMMMOPRSSSRQOMMNOPRSSSRQPNMMNPQRSSRQPNMMNOQRSSRQPONMNOPQSSSRQONNNOPRSSSSRPONNPQSTUUTSRQQPRSTUUVUTSQPPQRSTUTTSRQPPQRSSTSSRQPOOOQRSSSRRPOOOPQRSTSSRQPPPPQRSTTSSRQPPPQRRSSSRQQPOOPQRSSSRQPPOOPQRSSSSRQQPPPRRSTTTSRRQQQQRSTTSSRQQQQRSSTUUUTTSSSSTUVWWVVUUTTUWWXXYYYXXXYYYabdhkomjhhjimnnpomnmsq83zuuuutrpm&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.3045,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=583|1:|0|avg=1832|max=6015&amp;chxp=1,1,30,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="131079" name="mini_frostbolt" count="85.541" frequency="4.351" dpe="50370" dpe_pct="4.849" dpet="201481.713" apr="0" pdps="9608.940">
+          <chart type="timeline_aps" href="http://5.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=mini_frostbolt DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AABEIIOPPRWbhlpsvwx0468767111zupjfbXVUSPMJGEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDFGIJKLNQUXadgikmoqrttsrqqomjgdZWURPNLJGDBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCDFGHIJKMPRUWZbdfgijkllkjjigecZXUSQOMKIGECBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCCEGHIJKNPTWZabfiijmnponnmlkhfbYVUS&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.1192,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=581|1:|0|avg=9859|max=82686&amp;amp;chxp=1,1,12,100"/>
+          <etpe>0.250</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>4308686.434</actual_amount>
+          <total_amount>4308686.434</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>201481.713</aps>
+          <apet>201481.713</apet>
+          <direct_results count="85.241">
+            <result type="hit" count="64.468" pct="75.631" min="27371.560" max="54528.965" avg="37968.736" avg_min="32754.693" avg_max="46514.768" actual="2447530.413" total="2447530.413" overkill_pct="0"/>
+            <result type="crit" count="20.771" pct="24.367" min="54743.121" max="130869.517" avg="89614.444" avg_min="69114.175" avg_max="115445.105" actual="1861156.021" total="1861156.021" overkill_pct="0"/>
+            <result type="miss" count="0.002" pct="0.002" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://5.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=mini_frostbolt DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AABEIIOPPRWbhlpsvwx0468767111zupjfbXVUSPMJGEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDFGIJKLNQUXadgikmoqrttsrqqomjgdZWURPNLJGDBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCDFGHIJKMPRUWZbdfgijkllkjjigecZXUSQOMKIGECBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCCEGHIJKNPTWZabfiijmnponnmlkhfbYVUS&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.1192,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=581|1:|0|avg=9859|max=82686&amp;chxp=1,1,12,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="131081" name="mini_frostfire_bolt" count="38.671" frequency="9.781" dpe="122473" dpe_pct="5.330" dpet="489926.418" apr="0" pdps="10590.559">
+          <chart type="timeline_aps" href="http://6.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=mini_frostfire_bolt DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:LMPQQZfhkoruxz13481312222uoljfcZWUSQOLJHGECBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEGIKMNPTWYacefhjlmopmmllllkgdbZXVUSQONLKIHFECBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDFHIJLMPRTVXZacdfghhggffffecaYWUTRQONLKJHGFEDBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDFHJLMPQSWXYZZaddffdebcbaigecZXWVVUR&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.1202,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=578|1:|0|avg=10522|max=87522&amp;amp;chxp=1,1,12,100"/>
+          <etpe>0.250</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>4736118.685</actual_amount>
+          <total_amount>4736118.685</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>489926.418</aps>
+          <apet>489926.418</apet>
+          <direct_results count="38.560">
+            <result type="hit" count="1.570" pct="4.071" min="36746.310" max="60197.919" avg="43277.451" avg_min="0" avg_max="59131.643" actual="67925.274" total="67925.274" overkill_pct="0"/>
+            <result type="crit" count="36.987" pct="95.922" min="73492.621" max="182784.015" avg="126225.140" avg_min="94503.282" avg_max="161658.927" actual="4668193.411" total="4668193.411" overkill_pct="0"/>
+            <result type="miss" count="0.003" pct="0.008" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://6.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=mini_frostfire_bolt DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:LMPQQZfhkoruxz13481312222uoljfcZWUSQOLJHGECBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEGIKMNPTWYacefhjlmopmmllllkgdbZXVUSQONLKIHFECBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDFHIJLMPRTVXZacdfghhggffffecaYWUTRQONLKJHGFEDBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDFHJLMPQSWXYZZaddffdebcbaigecZXWVVUR&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.1202,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=578|1:|0|avg=10522|max=87522&amp;chxp=1,1,12,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="131080" name="mini_ice_lance" count="61.582" frequency="6.211" dpe="118807" dpe_pct="8.234" dpet="475241.769" apr="0" pdps="16345.129">
+          <chart type="timeline_aps" href="http://7.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=mini_ice_lance DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:OTXZbbfnuwxz13456861wsponmjaUSQONLJIIGFEDCCBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACFJMORSUXbefhijkmnopnligedcaYURPOMLKJIHGFEDCBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEGJLOQRUXZbdefghijkjigecbZYVTQONMLJIHGFFEDCBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACDFHJLMORTWXXYYYbbbcddcZXWXWTRONNMMMJJ&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.1099,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=580|1:|min=-0|0|avg=15914|max=144751&amp;amp;chxp=1,1,0,11,100"/>
+          <etpe>0.250</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>7316347.037</actual_amount>
+          <total_amount>7316347.037</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>475241.769</aps>
+          <apet>475241.769</apet>
+          <direct_results count="61.348">
+            <result type="hit" count="2.830" pct="4.613" min="35214.526" max="58196.812" avg="41204.955" avg_min="0" avg_max="58196.812" actual="116597.932" total="116597.932" overkill_pct="0"/>
+            <result type="crit" count="58.514" pct="95.379" min="70429.052" max="175166.297" avg="123057.072" avg_min="103828.946" avg_max="157259.243" actual="7199749.105" total="7199749.105" overkill_pct="0"/>
+            <result type="miss" count="0.005" pct="0.008" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://7.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=mini_ice_lance DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:OTXZbbfnuwxz13456861wsponmjaUSQONLJIIGFEDCCBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACFJMORSUXbefhijkmnopnligedcaYURPOMLKJIHGFEDCBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEGJLOQRUXZbdefghijkjigecbZYVTQONMLJIHGFFEDCBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACDFHJLMORTWXXYYYbbbcddcZXWXWTRONNMMMJJ&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.1099,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=580|1:|min=-0|0|avg=15914|max=144751&amp;chxp=1,1,0,11,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="55342" name="mirror_image" count="3.042" frequency="180.724" dpe="589793" dpe_pct="0" dpet="838790.837" apr="146.439" pdps="0">
+          <chart type="timeline_aps" href="http://8.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=mirror_image DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=545|1:|0|&amp;amp;chxp=1,1,nan,100"/>
+          <etpe>0.703</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>0</actual_amount>
+          <total_amount>0</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>838790.837</aps>
+          <apet>838790.837</apet>
+          <direct_results count="3.042">
+            <result type="none" count="3.042" pct="100" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://8.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=mirror_image DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=545|1:|0|&amp;chxp=1,1,nan,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="120687" name="stormlash" count="65.015" frequency="4.994" dpe="33975" dpe_pct="2.486" dpet="0" apr="0" pdps="4982.807">
+          <chart type="timeline_aps" href="http://9.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=stormlash DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:LNQTWZeilosvy1478731ywtqnkebYVROLIFCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBCCDEEFFGGHHIIJKKKKKJJIHHGGFF&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.0723,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=328|1:|0|avg=6550|max=90588&amp;amp;chxp=1,1,7,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>2208887.269</actual_amount>
+          <total_amount>2208887.269</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="65.015">
+            <result type="hit" count="48.452" pct="74.525" min="10419.150" max="44449.283" avg="24801.698" avg_min="21597.684" avg_max="29377.871" actual="1201731.016" total="1201731.016" overkill_pct="0"/>
+            <result type="crit" count="16.561" pct="25.472" min="22098.300" max="106678.278" avg="60814.406" avg_min="45817.380" avg_max="81664.899" actual="1007156.253" total="1007156.253" overkill_pct="0"/>
+            <result type="miss" count="0.002" pct="0.003" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://9.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=stormlash DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:LNQTWZeilosvy1478731ywtqnkebYVROLIFCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBCCDEEFFGGHHIIJKKKKKJJIHHGGFF&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.0723,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=328|1:|0|avg=6550|max=90588&amp;chxp=1,1,7,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+      </actions>
+      <action_definitions>
+        <action_detail id="108978" name="alter_time_activate">
+          <school>arcane</school>
+          <resource>mana</resource>
+          <range>0</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>3000</base_cost>
+          <cooldown duration="180"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <description>Alter the fabric of time, causing the caster to return to their current location, health, mana, buffs, and debuffs, when cast a second time, or after $110909d.  
+
+Effect negated if the caster dies within the $110909d before the effect occurs or moves too far away.</description>
+        </action_detail>
+        <action_detail id="12051" name="evocation">
+          <school>arcane</school>
+          <resource>none</resource>
+          <range>0</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip>Gain $w1% of total mana $?$w2=0[][and $w2% of total health ]every $t1 sec.</tooltip>
+          <description>Gain $m1% of your total mana $?s56380&amp;amp;!s114003[and $m2% of your total health ][]instantly and another ${3*$m1}% of your total mana $?s56380&amp;amp;!s114003[and ${3*$m2}% of your total health ][]over $d$?s56380&amp;amp;s114003[, and $125440m1% of your total health upon completion][].</description>
+          <damage_over_time>
+            <tick_may_crit>true</tick_may_crit>
+            <tick_zero>true</tick_zero>
+            <tick_power_mod>0</tick_power_mod>
+            <base>0</base>
+            <num_ticks>3</num_ticks>
+            <base_tick_time>1</base_tick_time>
+            <hasted_ticks>0</hasted_ticks>
+            <dot_behavior>DOT_REFRESH</dot_behavior>
+          </damage_over_time>
+        </action_detail>
+        <action_detail id="116" name="frostbolt">
+          <school>frost</school>
+          <resource>mana</resource>
+          <range>40</range>
+          <travel_speed>28</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>12000</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>2</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip>$?$w1=0[][Movement slowed by $w1%.
+]Damage taken from the Mage's Frostbolt and Ice Lance, and the Mage's Water Elemental's Waterbolt increased by $w4%.</tooltip>
+          <description>Launches a bolt of frost at the enemy, causing $s2 Frost damage and slowing movement speed by $s1% for $d.
+
+Also causes the target to take an additional $s4% damage from your Frostbolt and Ice Lance, and your Water Elemental's Waterbolt, stacking up to $u times.</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>1.661</direct_power_mod>
+            <base min="1521.285" max="1936.181"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="44614" name="frostfire_bolt">
+          <school>frostfire</school>
+          <resource>mana</resource>
+          <range>40</range>
+          <travel_speed>28</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>12000</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>2.750</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip>Movement slowed by $s1%.</tooltip>
+          <description>Launches a bolt of frostfire at the enemy, causing $?a57761[${$m2*1.25} to ${$M2*1.25}][$s2] Frostfire damage and slowing the target by $s1% for $d.</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>1.500</direct_power_mod>
+            <base min="1373.828" max="1748.508"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="84714" name="frozen_orb">
+          <school>frost</school>
+          <resource>mana</resource>
+          <range>40</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>30000</base_cost>
+          <cooldown duration="60"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <description>Launches a Frozen Orb forward from the Mage's position, releasing Frostbolts that deal $84721s2 Frost damage to all nearby enemy targets for $d. Grants the Mage 1 charge of Fingers of Frost when it first reaches a target.
+
+Targets damaged by the Frost Orb are slowed by $84721s1% for $84721d.</description>
+          <damage_over_time>
+            <tick_may_crit>true</tick_may_crit>
+            <tick_zero>false</tick_zero>
+            <tick_power_mod>0</tick_power_mod>
+            <base>0</base>
+            <num_ticks>10</num_ticks>
+            <base_tick_time>1</base_tick_time>
+            <hasted_ticks>0</hasted_ticks>
+            <dot_behavior>DOT_REFRESH</dot_behavior>
+          </damage_over_time>
+        </action_detail>
+        <action_detail id="84721" name="frozen_orb_bolt">
+          <school>frost</school>
+          <resource>none</resource>
+          <range>100</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip>Movement slowed by $s1%.</tooltip>
+          <description>$@spelldesc84714</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>0.511</direct_power_mod>
+            <base min="593.764" max="763.411"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="30455" name="ice_lance">
+          <school>frost</school>
+          <resource>mana</resource>
+          <range>40</range>
+          <travel_speed>38</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>3000</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <description>Deals $?a44544[${$m1*1.25} to ${$M1*1.25}][$s1] Frost damage to an enemy target$?s56377&amp;amp;!a44544[, and ${$m1*$56377m2/100} to ${$M1*$56377m2/100} Frost damage to a second nearby target][]$?s56377&amp;amp;a44544[, and ${$m1*1.25*$56377m2/100} to ${$M1*1.25*$56377m2/100} Frost damage to a second nearby target][].
+
+Ice Lance damage is quadrupled against frozen targets.</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>0.250</direct_power_mod>
+            <base min="227.670" max="292.719"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="12472" name="icy_veins">
+          <school>frost</school>
+          <resource>none</resource>
+          <range>0</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="180"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip>Spell haste increased by $s1% and pushback suffered by damaging attacks while casting reduced by $s2%.</tooltip>
+          <description>Accelerates your spellcasting, granting $s1% spell haste and reducing the pushback suffered from damaging attacks while casting by $s2%.$?s56374[  Casting Icy Veins removes all movement slowing and cast time slowing effects.][]  Lasts $d.</description>
+        </action_detail>
+        <action_detail id="44457" name="living_bomb">
+          <school>fire</school>
+          <resource>mana</resource>
+          <range>40</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>1</trigger_gcd>
+          <base_cost>4500</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip>Causes $s1 Fire damage every $t1 sec. After $d, the target explodes, causing ${($44457m3/100)*$44457o1} Fire damage to up to the target and all other enemies within $44461A1 yards.</tooltip>
+          <description>The target becomes a Living Bomb, taking $44457o1 Fire damage over $44457d. When this effect ends, or the target dies, it explodes to deal an additional ${($44457m3/100)*$44457o1} Fire damage to the target and all other enemies within $44461A1 yards. Limit 3 targets.
+
+This spell has a 1.0 sec global cooldown.</description>
+          <damage_over_time>
+            <tick_may_crit>true</tick_may_crit>
+            <tick_zero>false</tick_zero>
+            <tick_power_mod>0.804</tick_power_mod>
+            <base>1072.418</base>
+            <num_ticks>4</num_ticks>
+            <base_tick_time>3</base_tick_time>
+            <hasted_ticks>1</hasted_ticks>
+            <dot_behavior>DOT_REFRESH</dot_behavior>
+          </damage_over_time>
+        </action_detail>
+        <action_detail id="44461" name="living_bomb_explosion">
+          <school>fire</school>
+          <resource>none</resource>
+          <range>50000</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <description>$@spelldesc44457</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>0.080</direct_power_mod>
+            <base min="107.242" max="107.242"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="131079" name="mini_frostbolt">
+          <school>frost</school>
+          <resource>none</resource>
+          <range>40</range>
+          <travel_speed>28</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>2</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <description>$@spelldesc116</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>1.661</direct_power_mod>
+            <base min="1521.285" max="1936.181"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="131081" name="mini_frostfire_bolt">
+          <school>frostfire</school>
+          <resource>none</resource>
+          <range>40</range>
+          <travel_speed>28</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>2.750</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <description>$@spelldesc44614</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>1.500</direct_power_mod>
+            <base min="1373.828" max="1748.508"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="131080" name="mini_ice_lance">
+          <school>frost</school>
+          <resource>none</resource>
+          <range>40</range>
+          <travel_speed>38</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <description>$@spelldesc30455</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>0.250</direct_power_mod>
+            <base min="227.670" max="292.719"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="55342" name="mirror_image">
+          <school>arcane</school>
+          <resource>mana</resource>
+          <range>0</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>6000</base_cost>
+          <cooldown duration="180"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip>Copies of the caster that attack on their own.</tooltip>
+          <description>Creates $&amp;lt;images&amp;gt; copies of the caster nearby, which cast spells and attack the Mage's enemies.  Lasts $55342d.</description>
+        </action_detail>
+        <action_detail id="120687" name="stormlash">
+          <school>nature</school>
+          <resource>none</resource>
+          <range>100</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0.100"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <description>Deals Nature damage to enemy targets.</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>0</direct_power_mod>
+            <base min="13230.800" max="13230.800"/>
+          </direct_damage>
+        </action_detail>
+      </action_definitions>
+      <buffs>
+        <buff name="bloodlust" type="dynamic"/>
+        <buff name="skull_banner" type="dynamic"/>
+        <buff name="tempus_repit" type="dynamic"/>
+        <buff name="jade_serpent_potion" type="dynamic"/>
+        <buff name="stormlash" type="dynamic"/>
+        <buff name="brain_freeze" type="dynamic"/>
+        <buff name="fingers_of_frost" type="dynamic"/>
+        <buff name="frost_armor" type="constant" start="1.0" refresh="2.9" interval="0.0" trigger="181.2" uptime="100"/>
+        <buff name="icy_veins" type="dynamic"/>
+        <buff name="invokers_energy" type="constant" start="2.6" refresh="8.8" interval="167.3" trigger="44.3" uptime="99" benefit="98.761"/>
+        <buff name="alter_time" type="dynamic"/>
+        <buff name="tier15_2pc_crit" type="dynamic"/>
+        <buff name="tier15_2pc_haste" type="dynamic"/>
+        <buff name="tier15_2pc_mastery" type="dynamic"/>
+        <buff name="jade_spirit" type="dynamic"/>
+        <buff name="wushoolays_final_choice" type="dynamic"/>
+        <buff name="breath_of_the_hydra" type="dynamic"/>
+      </buffs>
+      <benefits>
+        <benefit name="dps rotation" ratio_pct="20.7"/>
+        <benefit name="dpm rotation" ratio_pct="79.3"/>
+        <benefit name="water_elemental" ratio_pct="100.0"/>
+      </benefits>
+      <uptimes>
+        <uptime name="Mana Cap" pct="2.9"/>
+      </uptimes>
+      <procs/>
+      <gains>
+        <gain name="mp5_regen" actual="1140767.7" overflow_pct="2.9"/>
+        <gain name="evocation" actual="1768421.4" overflow_pct="21.4"/>
+      </gains>
+      <charts>
+        <chart type="dpet" href="http://7.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Breyada Damage Sources&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:23,18,15,14,13,10,6,6,5,3,3,2,1,1&amp;chds=0,100&amp;chdls=ffffff&amp;chco=0070DE,C41F3B,0070DE,62480C,0070DE,0070DE,62480C,0070DE,0070DE,0070DE,336600,0070DE,C41F3B,336600&amp;chl=frostbolt|living_bomb|ice_lance|frostfire_bolt|water_elemental: waterbolt|mini_ice_lance|mini_frostfire_bolt|mini_frostbolt|water_elemental: mini_waterbolt|frozen_orb|stormlash|mirror_image: frostbolt|living_bomb_explosion|water_elemental: stormlash&amp;"/>
+        <chart type="dmg" href="http://7.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Breyada Damage Sources&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:23,18,15,14,13,10,6,6,5,3,3,2,1,1&amp;chds=0,100&amp;chdls=ffffff&amp;chco=0070DE,C41F3B,0070DE,62480C,0070DE,0070DE,62480C,0070DE,0070DE,0070DE,336600,0070DE,C41F3B,336600&amp;chl=frostbolt|living_bomb|ice_lance|frostfire_bolt|water_elemental: waterbolt|mini_ice_lance|mini_frostfire_bolt|mini_frostbolt|water_elemental: mini_waterbolt|frozen_orb|stormlash|mirror_image: frostbolt|living_bomb_explosion|water_elemental: stormlash&amp;"/>
+        <chart type="timeline_dps" href="http://9.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=Breyada DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:PSVYadimqtwz24677854320yxwtqnljgedbaZYYXWWVVUUTTTTTSSSSRRSSSSSSSSSSSSSSSSSRRRQQQQPPPPQQQQPPPPPPPPPPPPPPPPPPPPPPPPPPPPQQQRRRSSSSSSSSSSSSRRRRQQQQPPQQQQQPPPPPPPPPPPPPPPPPPPPPPPPPPPPPQRSTUVWXYZabbcdeefggffeedddccbaZZYXWWVUUUTTSSRRQQQQQQPPPPPQQQQRRRRSSSSSSSSSSSSRRRRQQQQQQQQQPPPPPPPPPPPPPPPPPPPPPPPPPPQQQQRRSSSTTTTTTUUUUUUUUTTSSSRRRRQQQQQQPPPPPPPPPPPPPPPPPPPPPPPPPPQRRSTTUVWWXYYZZaabbcbbbaaZZZYXXWWVVUUTTTSSSRRRQQQQQQQQQQQQQQQQQRRRRSSSSSSSSSSSSSRRRRQQQQQQQPPPPPPPPPPPPPPPPPPPPPPPPPQPPQQQQQQRRRRRRRRRRRRRRRRRRQQQQQPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPQQRRSTTVVWWXXXYZZZZaaZZYZZYYXVUTSRQONML&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.3402,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=582|1:|0|avg=197187|max=579661&amp;chxp=1,1,34,100"/>
+        <chart type="distribution_dps" href="http://2.chart.apis.google.com/chart?cht=bvs&amp;chf=bg,s,333333&amp;chtt=Breyada DPS Distribution&amp;chts=dddddd,18&amp;chs=550x185&amp;chg=20,20&amp;chxs=0,FFFFFF&amp;chd=t:2,0,2,3,4,4,20,13,21,22,29,30,34,32,38,38,56,47,45,65,57,60,50,45,47,32,27,35,22,20,26,18,11,11,6,3,7,5,2,3,0,1,4,0,0,1,0,0,0,1&amp;chds=0,65&amp;chbh=5&amp;chxt=x&amp;chxl=0:|min=175649|avg=197187|max=229410&amp;chxp=0,1,40,100&amp;"/>
+        <chart type="time_spent" href="http://8.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Breyada Spent Time&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:47.3,17.7,14.0,8.6,3.4,1.8,0.5&amp;chds=0,100&amp;chdls=ffffff&amp;chco=0070DE,0070DE,62480C,C41F3B,69CCF0,0070DE,69CCF0&amp;chl=frostbolt 213.8s|ice_lance 80.0s|frostfire_bolt 63.5s|living_bomb 38.8s|evocation 15.5s|frozen_orb 8.3s|mirror_image 2.1s&amp;"/>
+      </charts>
+    </player>
+    <player name="Breyada_water_elemental" owner="Breyada">
+      <type>Player</type>
+      <level>90</level>
+      <race>none</race>
+      <class type="pet" subtype="none"/>
+      <specialization>unknown</specialization>
+      <primary_role>hybrid</primary_role>
+      <position>back</position>
+      <dps value="31182.859" effective="31182.859" error="0" range="4763.526" convergence="0"/>
+      <waiting_time pct="0"/>
+      <active_time pct="100"/>
+      <apm>40.263</apm>
+      <attribute name="strength" base="0" gear="0" buffed="0"/>
+      <attribute name="agility" base="0" gear="0" buffed="0"/>
+      <attribute name="stamina" base="18243" gear="0" buffed="20067"/>
+      <attribute name="intellect" base="5336" gear="0" buffed="6139"/>
+      <attribute name="spirit" base="0" gear="0" buffed="0"/>
+      <attribute name="mastery_value" base="0" gear="0" buffed="0"/>
+      <attribute name="spellpower" base="27395" gear="0" buffed="33077"/>
+      <attribute name="spellhit" base="15" gear="0" buffed="15"/>
+      <attribute name="spellcrit" base="14" gear="0" buffed="20"/>
+      <attribute name="spellhaste" base="31" gear="0" buffed="47"/>
+      <attribute name="spellspeed" base="31" gear="0" buffed="47"/>
+      <attribute name="manareg_per_second" base="0" gear="0" buffed="0"/>
+      <attribute name="attackpower" base="0" gear="0" buffed="0"/>
+      <attribute name="attackhit" base="7" gear="0" buffed="7"/>
+      <attribute name="attackcrit" base="14" gear="0" buffed="20"/>
+      <attribute name="expertise" base="7" gear="0" buffed="7"/>
+      <attribute name="expertise_oh" base="7" gear="0" buffed="7"/>
+      <attribute name="attackhaste" base="31" gear="0" buffed="31"/>
+      <attribute name="attackspeed" base="31" gear="0" buffed="44"/>
+      <attribute name="armor" base="15780" gear="0" buffed="15780"/>
+      <attribute name="miss" base="0" gear="0" buffed="0"/>
+      <attribute name="dodge" base="0" gear="0" buffed="0"/>
+      <attribute name="parry" base="0" gear="0" buffed="0"/>
+      <attribute name="block" base="0" gear="0" buffed="0"/>
+      <attribute name="tank_crit" base="0" gear="0" buffed="0"/>
+      <resource name="health" base="486939" buffed="0"/>
+      <resource name="mana" base="0" buffed="0"/>
+      <glyphs/>
+      <priorities>
+        <action index="0" value="waterbolt"/>
+      </priorities>
+      <actions>
+        <action id="131581" name="mini_waterbolt" count="0" frequency="0" dpe="0" dpe_pct="4.133" dpet="0" apr="0" pdps="8199.384">
+          <chart type="timeline_aps" href="http://2.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=mini_waterbolt DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:CFILOQTXbfjmptwy03587654220wsokheaXVTQOMKIGECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCDFGIJLNPRTUWYabdfghhhhhhgedbZXWUSQPNLKIHFDCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDEFGIJLMOPRTUWXZabcccddccbZYWVTSQPNMKJIGFDCBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDEFGIKLMOPRSUVXYZbbcbccbcbaYXWUSRPON&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.1070,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=582|1:|0|avg=8083|max=75507&amp;amp;chxp=1,1,11,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>3672608.348</actual_amount>
+          <total_amount>3672608.348</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="165.407">
+            <result type="hit" count="124.776" pct="75.435" min="10194.309" max="23355.507" avg="16561.652" avg_min="14566.819" avg_max="19544.316" actual="2066256.569" total="2066256.569" overkill_pct="0"/>
+            <result type="crit" count="40.620" pct="24.557" min="20388.618" max="56053.216" avg="39547.441" avg_min="32798.361" avg_max="47999.866" actual="1606351.778" total="1606351.778" overkill_pct="0"/>
+            <result type="miss" count="0.012" pct="0.007" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://2.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=mini_waterbolt DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:CFILOQTXbfjmptwy03587654220wsokheaXVTQOMKIGECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCDFGIJLNPRTUWYabdfghhhhhhgedbZXWUSQPNLKIHFDCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDEFGIJLMOPRTUWXZabcccddccbZYWVTSQPNMKJIGFDCBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDEFGIKLMOPRSUVXYZbbcbccbcbaYXWUSRPON&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.1070,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=582|1:|0|avg=8083|max=75507&amp;chxp=1,1,11,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="120687" name="stormlash" count="57.848" frequency="5.621" dpe="9077" dpe_pct="0.591" dpet="0" apr="0" pdps="1183.707">
+          <chart type="timeline_aps" href="http://3.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=stormlash DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:EIMRVYadinsux036787751xsoljgbWRPMJGDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCDDEFGHIIIJKLMMNOPPOONMLKKJIIH&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.0776,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=328|1:|0|avg=1563|max=20135&amp;amp;chxp=1,1,8,100"/>
+          <etpe>0</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>525068.783</actual_amount>
+          <total_amount>525068.783</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>0</aps>
+          <apet>0</apet>
+          <direct_results count="57.848">
+            <result type="hit" count="42.637" pct="73.705" min="4780.870" max="11143.840" avg="6682.059" avg_min="6189.173" avg_max="7473.786" actual="284898.818" total="284898.818" overkill_pct="0"/>
+            <result type="crit" count="15.207" pct="26.288" min="10327.158" max="23583.008" avg="15794.114" avg_min="13914.912" avg_max="18799.331" actual="240169.965" total="240169.965" overkill_pct="0"/>
+            <result type="miss" count="0.004" pct="0.007" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://3.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=stormlash DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:EIMRVYadinsux036787751xsoljgbWRPMJGDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCDDEFGHIIIJKLMMNOPPOONMLKKJIIH&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.0776,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=328|1:|0|avg=1563|max=20135&amp;chxp=1,1,8,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+        <action id="31707" name="waterbolt" count="302.466" frequency="1.492" dpe="44727" dpe_pct="11.092" dpet="29967.440" apr="0" pdps="21799.768">
+          <chart type="timeline_aps" href="http://4.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=waterbolt DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:KKKKKKKKKKKKKKHDAAAAAAAABDGJMPSWZcgjmpsvx035777644320zyxwvuutsrrqqqqqqqqqqqqpqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqpnljhfdbYWUSQOMKHFDBAAAAAAABDFIKNPSUWZbdfhkmoqrttttssrrrrqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqrrrqrqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqrrrqrrrrrrrrrrrrrrrrrrrrrrrqpomkigecZXVTROMKIGECBAAAAAABCEGILNPSUWZbdfikmoqrssssssrrrrrrrqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqpqqqqqqqqqqqqqpqqqqqqqqqqpppppppppppppppppppppppppqqppqqqqqqqpppqpppponlkigecaXVTRPNLJHFDCBAAAAAAAABBFFFFFFFFFFF&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.5819,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=583|1:|0|avg=21088|max=36237&amp;amp;chxp=1,1,58,100"/>
+          <etpe>1.493</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>9855832.633</actual_amount>
+          <total_amount>9855832.633</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>29967.440</aps>
+          <apet>29967.440</apet>
+          <direct_results count="245.516">
+            <result type="hit" count="197.957" pct="80.629" min="11723.455" max="58388.766" avg="33354.672" avg_min="30877.618" avg_max="37169.439" actual="6602751.844" total="6602751.844" overkill_pct="0"/>
+            <result type="crit" count="47.548" pct="19.366" min="23446.911" max="125083.088" avg="68415.877" avg_min="60910.551" avg_max="77560.972" actual="3253080.790" total="3253080.790" overkill_pct="0"/>
+            <result type="miss" count="0.011" pct="0.004" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://4.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=waterbolt DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:KKKKKKKKKKKKKKHDAAAAAAAABDGJMPSWZcgjmpsvx035777644320zyxwvuutsrrqqqqqqqqqqqqpqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqpnljhfdbYWUSQOMKHFDBAAAAAAABDFIKNPSUWZbdfhkmoqrttttssrrrrqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqrrrqrqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqrrrqrrrrrrrrrrrrrrrrrrrrrrrqpomkigecZXVTROMKIGECBAAAAAABCEGILNPSUWZbdfikmoqrssssssrrrrrrrqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqpqqqqqqqqqqqqqpqqqqqqqqqqpppppppppppppppppppppppppqqppqqqqqqqpppqpppponlkigecaXVTRPNLJHFDCBAAAAAAAABBFFFFFFFFFFF&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.5819,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=583|1:|0|avg=21088|max=36237&amp;chxp=1,1,58,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+      </actions>
+      <action_definitions>
+        <action_detail id="131581" name="mini_waterbolt">
+          <school>frost</school>
+          <resource>none</resource>
+          <range>45</range>
+          <travel_speed>16</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <description>Deals $s1 Frost damage to the target.</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>0.400</direct_power_mod>
+            <base min="364.273" max="468.350"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="120687" name="stormlash">
+          <school>nature</school>
+          <resource>none</resource>
+          <range>100</range>
+          <travel_speed>0</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0.100"/>
+          <base_execute_time>0</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <description>Deals Nature damage to enemy targets.</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>0</direct_power_mod>
+            <base min="3307.700" max="3307.700"/>
+          </direct_damage>
+        </action_detail>
+        <action_detail id="31707" name="waterbolt">
+          <school>frost</school>
+          <resource>none</resource>
+          <range>45</range>
+          <travel_speed>16</travel_speed>
+          <trigger_gcd>1.500</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>2.500</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <description>Deals $s1 Frost damage to the target.</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>0.400</direct_power_mod>
+            <base min="364.273" max="468.350"/>
+          </direct_damage>
+        </action_detail>
+      </action_definitions>
+      <buffs>
+        <buff name="skull_banner" type="dynamic"/>
+        <buff name="stormlash" type="dynamic"/>
+      </buffs>
+      <benefits/>
+      <uptimes/>
+      <procs/>
+      <gains/>
+      <charts>
+        <chart type="dpet" href="http://7.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Breyada_water_elemental Damage Sources&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:70,26,4&amp;chds=0,100&amp;chdls=ffffff&amp;chco=0070DE,0070DE,336600&amp;chl=water_elemental: waterbolt|water_elemental: mini_waterbolt|water_elemental: stormlash&amp;"/>
+        <chart type="dmg" href="http://7.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Breyada_water_elemental Damage Sources&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:70,26,4&amp;chds=0,100&amp;chdls=ffffff&amp;chco=0070DE,0070DE,336600&amp;chl=water_elemental: waterbolt|water_elemental: mini_waterbolt|water_elemental: stormlash&amp;"/>
+        <chart type="time_spent" href="http://8.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Breyada_water_elemental Spent Time&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:99.8&amp;chds=0,100&amp;chdls=ffffff&amp;chco=0070DE&amp;chl=waterbolt 451.4s&amp;"/>
+      </charts>
+    </player>
+    <player name="Breyada_mirror_image" owner="Breyada">
+      <type>Player</type>
+      <level>90</level>
+      <race>none</race>
+      <class type="guardian" subtype="none"/>
+      <specialization>unknown</specialization>
+      <primary_role>hybrid</primary_role>
+      <position>back</position>
+      <dps value="20570.508" effective="20570.508" error="0" range="4514.416" convergence="0"/>
+      <waiting_time pct="0"/>
+      <active_time pct="19.353"/>
+      <apm>57.667</apm>
+      <attribute name="strength" base="0" gear="0" buffed="0"/>
+      <attribute name="agility" base="0" gear="0" buffed="0"/>
+      <attribute name="stamina" base="18243" gear="0" buffed="20067"/>
+      <attribute name="intellect" base="5336" gear="0" buffed="6139"/>
+      <attribute name="spirit" base="0" gear="0" buffed="0"/>
+      <attribute name="mastery_value" base="0" gear="0" buffed="0"/>
+      <attribute name="spellpower" base="1370" gear="0" buffed="1654"/>
+      <attribute name="spellhit" base="15" gear="0" buffed="15"/>
+      <attribute name="spellcrit" base="14" gear="0" buffed="20"/>
+      <attribute name="spellhaste" base="31" gear="0" buffed="47"/>
+      <attribute name="spellspeed" base="31" gear="0" buffed="47"/>
+      <attribute name="manareg_per_second" base="0" gear="0" buffed="0"/>
+      <attribute name="attackpower" base="0" gear="0" buffed="0"/>
+      <attribute name="attackhit" base="7" gear="0" buffed="7"/>
+      <attribute name="attackcrit" base="14" gear="0" buffed="20"/>
+      <attribute name="expertise" base="7" gear="0" buffed="7"/>
+      <attribute name="expertise_oh" base="7" gear="0" buffed="7"/>
+      <attribute name="attackhaste" base="31" gear="0" buffed="31"/>
+      <attribute name="attackspeed" base="31" gear="0" buffed="44"/>
+      <attribute name="armor" base="15780" gear="0" buffed="15780"/>
+      <attribute name="miss" base="0" gear="0" buffed="0"/>
+      <attribute name="dodge" base="0" gear="0" buffed="0"/>
+      <attribute name="parry" base="0" gear="0" buffed="0"/>
+      <attribute name="block" base="0" gear="0" buffed="0"/>
+      <attribute name="tank_crit" base="0" gear="0" buffed="0"/>
+      <resource name="health" base="486939" buffed="0"/>
+      <resource name="mana" base="0" buffed="0"/>
+      <glyphs/>
+      <priorities>
+        <action index="0" value="frostbolt"/>
+      </priorities>
+      <actions>
+        <action id="59638" name="frostbolt" count="243.195" frequency="4.903" dpe="7378" dpe_pct="2.019" dpet="6974.951" apr="0" pdps="20570.508">
+          <chart type="timeline_aps" href="http://5.chart.apis.google.com/chart?cht=lc&amp;amp;chf=bg,s,333333&amp;amp;chtt=frostbolt DPS Timeline&amp;amp;chts=dddddd,18&amp;amp;chs=550x200&amp;amp;chg=20,20&amp;amp;chxs=0,FFFFFF|1,FFFFFF&amp;amp;chd=s:TVadfimptx036677875554zxurnkgcZWURPMKHFDBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCEFHIKLNOQRTVXYacefggghhhiiihfecaZXVTRQOMKJHFECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDEGHIKLNOQRTUWXZbcddeeeeeeeedcaZXWUSRPOMKJHGEDBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACDEFHIJLMOPQSUVXYabcccddcddddcaZXWUTRQPN&amp;amp;chco=FDD017&amp;amp;chds=0,60&amp;amp;chm=h,FFF569,0,0.1200,0.4|h,C41F3B,0,0.0000,0.4&amp;amp;chxt=x,y&amp;amp;chxl=0:|0|sec=575|1:|min=-0|0|avg=3898|max=32476&amp;amp;chxp=1,1,0,12,100"/>
+          <etpe>1.058</etpe>
+          <ttpt>0</ttpt>
+          <actual_amount>1794173.601</actual_amount>
+          <total_amount>1794173.601</total_amount>
+          <overkill_pct>0</overkill_pct>
+          <aps>6974.951</aps>
+          <apet>6974.951</apet>
+          <direct_results count="242.083">
+            <result type="hit" count="184.545" pct="76.232" min="4666.672" max="7599.795" avg="5912.901" avg_min="5333.599" avg_max="6700.424" actual="1091095.723" total="1091095.723" overkill_pct="0"/>
+            <result type="crit" count="57.526" pct="23.763" min="9333.345" max="15199.590" avg="12222.914" avg_min="11035.149" avg_max="13656.887" actual="703077.878" total="703077.878" overkill_pct="0"/>
+            <result type="miss" count="0.013" pct="0.005" min="0" max="0" avg="0" avg_min="0" avg_max="0" actual="0" total="0" overkill_pct="0"/>
+          </direct_results>
+          <chart type="timeline_stat_aps" href="http://5.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=frostbolt DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:TVadfimptx036677875554zxurnkgcZWURPMKHFDBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCEFHIKLNOQRTVXYacefggghhhiiihfecaZXVTRQOMKJHFECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDEGHIKLNOQRTUWXZbcddeeeeeeeedcaZXWUSRPOMKJHGEDBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACDEFHIJLMOPQSUVXYabcccddcddddcaZXWUTRQPN&amp;chco=FDD017&amp;chds=0,60&amp;chm=h,FFF569,0,0.1200,0.4|h,C41F3B,0,0.0000,0.4&amp;chxt=x,y&amp;chxl=0:|0|sec=575|1:|min=-0|0|avg=3898|max=32476&amp;chxp=1,1,0,12,100"/>
+          <target>Fluffy_Pillow</target>
+        </action>
+      </actions>
+      <action_definitions>
+        <action_detail id="59638" name="frostbolt">
+          <school>frost</school>
+          <resource>mana</resource>
+          <range>40</range>
+          <travel_speed>24</travel_speed>
+          <trigger_gcd>0</trigger_gcd>
+          <base_cost>0</base_cost>
+          <cooldown duration="0"/>
+          <base_execute_time>2</base_execute_time>
+          <base_crit>0</base_crit>
+          <target>Fluffy_Pillow</target>
+          <tooltip>Reduced movement speed.</tooltip>
+          <description>Inflicts Frost damage to an enemy and reduces its movement speed for $d.</description>
+          <direct_damage>
+            <may_crit>true</may_crit>
+            <direct_power_mod>1.650</direct_power_mod>
+            <base min="1631.420" max="1803.149"/>
+          </direct_damage>
+        </action_detail>
+      </action_definitions>
+      <buffs/>
+      <benefits/>
+      <uptimes/>
+      <procs/>
+      <gains/>
+      <charts>
+        <chart type="dpet" href="http://1.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Breyada_mirror_image Damage Sources&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:100&amp;chds=0,100&amp;chdls=ffffff&amp;chco=0070DE&amp;chl=mirror_image: frostbolt&amp;"/>
+        <chart type="dmg" href="http://1.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Breyada_mirror_image Damage Sources&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:100&amp;chds=0,100&amp;chdls=ffffff&amp;chco=0070DE&amp;chl=mirror_image: frostbolt&amp;"/>
+        <chart type="time_spent" href="http://2.chart.apis.google.com/chart?cht=p&amp;chf=bg,s,333333&amp;chtt=Breyada_mirror_image Spent Time&amp;chts=dddddd,18&amp;chs=550x275&amp;chd=t:293.9&amp;chds=0,100&amp;chdls=ffffff&amp;chco=0070DE&amp;chl=frostbolt 257.2s&amp;"/>
+      </charts>
+    </player>
+    <player name="Breyada_mirror_image" owner="Breyada">
+      <type>Player</type>
+      <level>90</level>
+      <race>none</race>
+      <class type="guardian" subtype="none"/>
+      <specialization>unknown</specialization>
+      <primary_role>hybrid</primary_role>
+      <position>back</position>
+      <dps value="0" effective="0" error="0" range="0" convergence="0"/>
+      <waiting_time pct="0"/>
+      <active_time pct="19.353"/>
+      <apm>57.667</apm>
+      <attribute name="strength" base="0" gear="0" buffed="0"/>
+      <attribute name="agility" base="0" gear="0" buffed="0"/>
+      <attribute name="stamina" base="18243" gear="0" buffed="20067"/>
+      <attribute name="intellect" base="5336" gear="0" buffed="6139"/>
+      <attribute name="spirit" base="0" gear="0" buffed="0"/>
+      <attribute name="mastery_value" base="0" gear="0" buffed="0"/>
+      <attribute name="spellpower" base="1370" gear="0" buffed="1654"/>
+      <attribute name="spellhit" base="15" gear="0" buffed="15"/>
+      <attribute name="spellcrit" base="14" gear="0" buffed="20"/>
+      <attribute name="spellhaste" base="31" gear="0" buffed="47"/>
+      <attribute name="spellspeed" base="31" gear="0" buffed="47"/>
+      <attribute name="manareg_per_second" base="0" gear="0" buffed="0"/>
+      <attribute name="attackpower" base="0" gear="0" buffed="0"/>
+      <attribute name="attackhit" base="7" gear="0" buffed="7"/>
+      <attribute name="attackcrit" base="14" gear="0" buffed="20"/>
+      <attribute name="expertise" base="7" gear="0" buffed="7"/>
+      <attribute name="expertise_oh" base="7" gear="0" buffed="7"/>
+      <attribute name="attackhaste" base="31" gear="0" buffed="31"/>
+      <attribute name="attackspeed" base="31" gear="0" buffed="44"/>
+      <attribute name="armor" base="15780" gear="0" buffed="15780"/>
+      <attribute name="miss" base="0" gear="0" buffed="0"/>
+      <attribute name="dodge" base="0" gear="0" buffed="0"/>
+      <attribute name="parry" base="0" gear="0" buffed="0"/>
+      <attribute name="block" base="0" gear="0" buffed="0"/>
+      <attribute name="tank_crit" base="0" gear="0" buffed="0"/>
+      <resource name="health" base="486939" buffed="0"/>
+      <resource name="mana" base="0" buffed="0"/>
+      <glyphs/>
+      <priorities>
+        <action index="0" value="frostbolt"/>
+      </priorities>
+      <actions/>
+      <action_definitions/>
+      <buffs/>
+      <benefits/>
+      <uptimes/>
+      <procs/>
+      <gains/>
+      <charts/>
+    </player>
+    <player name="Breyada_mirror_image" owner="Breyada">
+      <type>Player</type>
+      <level>90</level>
+      <race>none</race>
+      <class type="guardian" subtype="none"/>
+      <specialization>unknown</specialization>
+      <primary_role>hybrid</primary_role>
+      <position>back</position>
+      <dps value="0" effective="0" error="0" range="0" convergence="0"/>
+      <waiting_time pct="0"/>
+      <active_time pct="19.353"/>
+      <apm>57.667</apm>
+      <attribute name="strength" base="0" gear="0" buffed="0"/>
+      <attribute name="agility" base="0" gear="0" buffed="0"/>
+      <attribute name="stamina" base="18243" gear="0" buffed="20067"/>
+      <attribute name="intellect" base="5336" gear="0" buffed="6139"/>
+      <attribute name="spirit" base="0" gear="0" buffed="0"/>
+      <attribute name="mastery_value" base="0" gear="0" buffed="0"/>
+      <attribute name="spellpower" base="1370" gear="0" buffed="1654"/>
+      <attribute name="spellhit" base="15" gear="0" buffed="15"/>
+      <attribute name="spellcrit" base="14" gear="0" buffed="20"/>
+      <attribute name="spellhaste" base="31" gear="0" buffed="47"/>
+      <attribute name="spellspeed" base="31" gear="0" buffed="47"/>
+      <attribute name="manareg_per_second" base="0" gear="0" buffed="0"/>
+      <attribute name="attackpower" base="0" gear="0" buffed="0"/>
+      <attribute name="attackhit" base="7" gear="0" buffed="7"/>
+      <attribute name="attackcrit" base="14" gear="0" buffed="20"/>
+      <attribute name="expertise" base="7" gear="0" buffed="7"/>
+      <attribute name="expertise_oh" base="7" gear="0" buffed="7"/>
+      <attribute name="attackhaste" base="31" gear="0" buffed="31"/>
+      <attribute name="attackspeed" base="31" gear="0" buffed="44"/>
+      <attribute name="armor" base="15780" gear="0" buffed="15780"/>
+      <attribute name="miss" base="0" gear="0" buffed="0"/>
+      <attribute name="dodge" base="0" gear="0" buffed="0"/>
+      <attribute name="parry" base="0" gear="0" buffed="0"/>
+      <attribute name="block" base="0" gear="0" buffed="0"/>
+      <attribute name="tank_crit" base="0" gear="0" buffed="0"/>
+      <resource name="health" base="486939" buffed="0"/>
+      <resource name="mana" base="0" buffed="0"/>
+      <glyphs/>
+      <priorities>
+        <action index="0" value="frostbolt"/>
+      </priorities>
+      <actions/>
+      <action_definitions/>
+      <buffs/>
+      <benefits/>
+      <uptimes/>
+      <procs/>
+      <gains/>
+      <charts/>
+    </player>
+  </players>
+  <targets>
+    <player name="Fluffy_Pillow">
+      <type>Target</type>
+      <level>93</level>
+      <race>humanoid</race>
+      <class type="enemy"/>
+      <specialization>unknown</specialization>
+      <primary_role>tank</primary_role>
+      <position>front</position>
+      <dps value="0" effective="0" error="0" range="0" convergence="0"/>
+      <waiting_time pct="0"/>
+      <active_time pct="100"/>
+      <apm>0</apm>
+      <attribute name="strength" base="0" gear="0" buffed="0"/>
+      <attribute name="agility" base="0" gear="0" buffed="0"/>
+      <attribute name="stamina" base="0" gear="0" buffed="0"/>
+      <attribute name="intellect" base="0" gear="0" buffed="0"/>
+      <attribute name="spirit" base="0" gear="0" buffed="0"/>
+      <attribute name="mastery_value" base="0" gear="0" buffed="0"/>
+      <attribute name="spellpower" base="0" gear="0" buffed="0"/>
+      <attribute name="spellhit" base="0" gear="0" buffed="0"/>
+      <attribute name="spellcrit" base="0" gear="0" buffed="0"/>
+      <attribute name="spellhaste" base="0" gear="0" buffed="0"/>
+      <attribute name="spellspeed" base="0" gear="0" buffed="0"/>
+      <attribute name="manareg_per_second" base="0" gear="0" buffed="0"/>
+      <attribute name="attackpower" base="0" gear="0" buffed="0"/>
+      <attribute name="attackhit" base="0" gear="0" buffed="0"/>
+      <attribute name="attackcrit" base="5" gear="0" buffed="5"/>
+      <attribute name="expertise" base="0" gear="0" buffed="0"/>
+      <attribute name="expertise_oh" base="0" gear="0" buffed="0"/>
+      <attribute name="attackhaste" base="0" gear="0" buffed="0"/>
+      <attribute name="attackspeed" base="0" gear="0" buffed="0"/>
+      <attribute name="armor" base="24835" gear="24835" buffed="24835"/>
+      <attribute name="miss" base="3" gear="0" buffed="3"/>
+      <attribute name="dodge" base="3" gear="0" buffed="3"/>
+      <attribute name="parry" base="3" gear="0" buffed="3"/>
+      <attribute name="block" base="3" gear="0" buffed="3"/>
+      <attribute name="tank_crit" base="0" gear="0" buffed="0"/>
+      <resource name="health" base="106198663" buffed="0"/>
+      <resource name="mana" base="0" buffed="0"/>
+      <glyphs/>
+      <priorities>
+        <action index="0" list="precombat" value="snapshot_stats"/>
+      </priorities>
+      <actions/>
+      <action_definitions/>
+      <buffs>
+        <buff name="slowed_casting" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="magic_vulnerability" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="physical_vulnerability" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="ranged_vulnerability" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="mortal_wounds" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="weakened_armor" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="weakened_blows" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="bleeding" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+        <buff name="Health Decade (0 - 10)" type="dynamic"/>
+        <buff name="Health Decade (10 - 20)" type="dynamic"/>
+        <buff name="Health Decade (20 - 30)" type="dynamic"/>
+        <buff name="Health Decade (30 - 40)" type="dynamic"/>
+        <buff name="Health Decade (40 - 50)" type="dynamic"/>
+        <buff name="Health Decade (50 - 60)" type="dynamic"/>
+        <buff name="Health Decade (60 - 70)" type="dynamic"/>
+        <buff name="Health Decade (70 - 80)" type="dynamic"/>
+        <buff name="Health Decade (80 - 90)" type="dynamic"/>
+        <buff name="Health Decade (90 - 100)" type="dynamic"/>
+        <buff name="frostbolt" type="dynamic"/>
+      </buffs>
+      <benefits/>
+      <uptimes/>
+      <procs/>
+      <gains/>
+      <charts>
+        <chart type="timeline_dps" href="http://6.chart.apis.google.com/chart?cht=lc&amp;chf=bg,s,333333&amp;chtt=Fluffy_Pillow DPS Timeline&amp;chts=dddddd,18&amp;chs=550x200&amp;chg=20,20&amp;chxs=0,FFFFFF|1,FFFFFF&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;chco=FDD017&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=582|1:|0|&amp;chxp=1,1,nan,100"/>
+      </charts>
+    </player>
+  </targets>
+  <buffs>
+    <buff name="attack_speed" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+    <buff name="attack_power_multiplier" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+    <buff name="critical_strike" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+    <buff name="mastery" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+    <buff name="spell_haste" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+    <buff name="spell_power_multiplier" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+    <buff name="stamina" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+    <buff name="str_agi_int" type="constant" start="1.0" refresh="0.0" interval="0.0" trigger="0.0" uptime="100"/>
+  </buffs>
+  <performance>
+    <total_events>6653906</total_events>
+    <max_event_queue>71</max_event_queue>
+    <target_health>106198663</target_health>
+    <sim_seconds>452190</sim_seconds>
+    <cpu_seconds>2.045</cpu_seconds>
+    <speed_up>221120</speed_up>
+  </performance>
+  <errors>
+    <error message="Glyph splitting_ice not found in spell database for player Breyada."/>
+    <error message="Glyph evaporation not found in spell database for player Breyada."/>
+    <error message="Glyph unbound_elemental not found in spell database for player Breyada."/>
+  </errors>
+</simulationcraft>
