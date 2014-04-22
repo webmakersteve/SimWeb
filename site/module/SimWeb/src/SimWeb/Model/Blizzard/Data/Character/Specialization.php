@@ -1,6 +1,6 @@
 <?php
 
-namespace SimWeb\Model\Character;
+namespace SimWeb\Model\Blizzard\Data\Character;
  
 class Specialization {
 	

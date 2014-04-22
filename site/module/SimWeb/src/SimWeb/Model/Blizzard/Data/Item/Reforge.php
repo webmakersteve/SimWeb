@@ -1,8 +1,8 @@
 <?php
 
-namespace SimWeb\Model\Item;
+namespace SimWeb\Model\Blizzard\Data\Item;
 
-use SimWeb\Model\Common\Stat;
+use SimWeb\Model\Blizzard\Data\Common\Stat;
  
 class Reforge {
 	

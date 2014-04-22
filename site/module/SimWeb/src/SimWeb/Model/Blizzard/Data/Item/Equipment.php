@@ -1,9 +1,9 @@
 <?php
 
-namespace SimWeb\Model\Item;
+namespace SimWeb\Model\Blizzard\Data\Item;
 
-use SimWeb\Model\Common\Stat,
-	SimWeb\Model\Item\Reforge;
+use SimWeb\Model\Blizzard\Data\Common\Stat,
+	SimWeb\Model\Blizzard\Data\Item\Reforge;
  
 class Equipment {
 	
@@ -75,7 +75,7 @@ class Equipment {
 	}
 	
 	private function addGem( $data ) {
-		echo $data."<br>";
+		//echo $data."<br>";
 	}
 	
 	private $reforge = FALSE;

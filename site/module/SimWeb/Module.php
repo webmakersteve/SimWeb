@@ -44,11 +44,10 @@ class Module
             'factories' => array(
                 'simcraft' => function (\Zend\ServiceManager\ServiceLocatorInterface $sl) {
                     $config = $sl->get('config'); 
-                    return new Service\Simulator($config);
+                    return new Model\Simcraft\Simulator($config);
                 },
 				'blizzapi' => function(\Zend\ServiceManager\ServiceLocatorInterface $sl) {
-					$x = new Service\BlizzAPI();
-					$x->setServiceLocator($sl);
+					$x = new Model\Blizzard\API();
 					return $x;
 				},
             ),

@@ -1,10 +1,17 @@
 <?php
 
-namespace SimWeb\Service;
+/**
+ * Acts as a dispatcher or service locator. Used as a service locator.
+ */
 
-use SimWeb\Service\RestAPI;
+namespace SimWeb\Model\Blizzard;
 
-class BlizzAPI extends RestAPI {
+use SimWeb\Model\Common\RestAPI;
+use SimWeb\Model\Common\Cacheable;
+
+use Zend\Cache\StorageFactory;
+
+class API extends RestAPI {
 	
 	const PATH = 'api/wow';
 	const HOST = '%s.battle.net';
@@ -14,6 +21,8 @@ class BlizzAPI extends RestAPI {
 	public function setRegion( $Region ) {
 		$this->Region = $Region;
 	}
+	
+	/** The rest of this stuff is a bit more fun */
 	
 	public function getCharacter( $RealmOrLink, $Name=NULL ) {
 		if ($Name === NULL) {
@@ -28,56 +37,54 @@ class BlizzAPI extends RestAPI {
 			'cache-expires' => 86400
 		);
 		return $this->dispatch($data);
+		
 	}
 	
 	public function getRealms($Realms=FALSE) {
+		//this one is cacheable
 		$data = array(
 			'type' => 'realms',
 			'cache-expires' => -1, //never uncache
-			
+			'cache-key'	=> 'realm-list'
 		);
+		
 		if ($Realms && is_array($Realms)) $data['realms'] = $Realms;
 		return $this->dispatch($data);
-	}
-	
-	protected function validateArmoryURL( $URL ) {
-		if (!filter_var($URL, FILTER_VALIDATE_URL)) return false;
-		$p = parse_url($URL);
-		
-		if (!strstr($p['host'], 'battle.net')) return false;
-		
-		if (!preg_match("#^/wow/[a-z_A-Z]{2,5}/character/#", $p['path'])) return false;
-		
-		//lastly get headers
-		$headers = get_headers( $URL );
-		
-		if (!strstr($headers[0], "200 OK")) return false;
-		return true;	
-	}
-	
-	protected function getFromArmoryURL( $URL ) {
-		
-		if (!$this->validateArmoryURL( $URL )) throw new ArmoryError("Invalid armory URL", ArmoryError::INVALID_URL);
-		$data = $this->parseArmoryURL( $URL );
-		
-		return $this->dispatch( $data );
 		
 	}
-	
 	
 	protected function dispatch( $data ) {
-		
+		$cache = $this->getCache();
 		if (!$data['type']) throw new ArmoryError();
+		//first check cache expiry
+		if (isset($data['cache-key']) && isset($data['cache-expires'])) {
+			$cached = $cache->getItem( $data['cache-key'], $success);
+			if ($success) {
+				$realms = unserialize($cached);
+				if ($realms instanceof Cacheable) {
+					if (!$realms->isExpired($data['cache-expires'])) return $realms; //check if it is expired
+				} else return $realms;
+			}
+		} //not loading this from cache
+		
 		switch (strtolower($data['type'])) {
 			case 'profile':
-				return $this->characterRequest( $data );
+				$r = $this->characterRequest( $data );
 				break;
 			case 'realms':
-				return $this->realmRequest( $data );
+				$r = $this->realmRequest( $data );
 				break;
 			default:
 				throw new ArmoryError();
+				
 		}
+		
+		if (isset($data['cache-key'])) {
+			if ($r instanceof Cacheable) $cache->setItem($data['cache-key'], $r->__toCache());
+			     					else $cache->setItem($data['cache-key'], serialize($r));
+		}
+		
+		return $r;
 	}
 	
 	protected function realmRequest( $Opts ) {
@@ -110,7 +117,9 @@ class BlizzAPI extends RestAPI {
 					'timezone' => $realm->timezone);
 			}
 			
-			return $arr;
+			$r = new Data\Realm\Collection();
+			$r->Exchange($arr);
+			return $r;
 			
 		} catch (\Exception $e) {
 				
@@ -227,8 +236,9 @@ class BlizzAPI extends RestAPI {
 				}
 					
 			}
-			
-			return $arr;
+			$r = new Data\Character\Character();
+			$r->Exchange($arr);
+			return $r;
 			
 		} catch (\Exception $e) {
 			//this will be errors fetching the data	
@@ -239,6 +249,18 @@ class BlizzAPI extends RestAPI {
 	
 	private function n( $str ) {
 		return str_replace(" ", "-", preg_replace("#['\"!]#", "", strtolower($str) ) );
+	}
+	
+	private function getCache() {
+		$cache = StorageFactory::factory(array(
+			'adapter'	=>	array(
+				'name'		=> 'filesystem',
+				'options'	=> array(
+					'cache_dir'	=>	'data/cache'
+				),
+			),
+		));
+		return $cache;	
 	}
 	
 	const PARSING_REGEX = "#^/wow/(?P<lang>[a-z_A-Z]{2,5})/character/(?P<realm>\b[^/]+\b)/(?P<name>\b[^/]+\b)/#";
@@ -257,6 +279,31 @@ class BlizzAPI extends RestAPI {
 				'region' => $country
 			);
 		} else return explode("/", $URL);
+		
+	}
+	
+	
+	protected function validateArmoryURL( $URL ) {
+		if (!filter_var($URL, FILTER_VALIDATE_URL)) return false;
+		$p = parse_url($URL);
+		
+		if (!strstr($p['host'], 'battle.net')) return false;
+		
+		if (!preg_match("#^/wow/[a-z_A-Z]{2,5}/character/#", $p['path'])) return false;
+		
+		//lastly get headers
+		$headers = get_headers( $URL );
+		
+		if (!strstr($headers[0], "200 OK")) return false;
+		return true;	
+	}
+	
+	protected function getFromArmoryURL( $URL ) {
+		
+		if (!$this->validateArmoryURL( $URL )) throw new ArmoryError("Invalid armory URL", ArmoryError::INVALID_URL);
+		$data = $this->parseArmoryURL( $URL );
+		
+		return $this->dispatch( $data );
 		
 	}
 	

@@ -12,23 +12,14 @@ namespace SimWeb\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-use SimWeb\Service\Simulator as SimCraft;
-
-use SimWeb\Model\Character\Character;
-use SimWeb\Model\Simcraft\Config as SimConfig;
-
-use SimWeb\Model\Realm\Collection as Realms;
 //= ([$]data\['[^']+[']\]) => = isset($1) ? $1 : NULL
 class IndexController extends AbstractActionController
 {
     public function indexAction() {
 		
-		$r = new Realms();
-		$rarr = $r->toArray(); //lazy loaded
+		$r = $this->getServiceLocator()->get('blizzapi')->getRealms();
+		$realms = $r->toAssocArray();
 		
-		foreach( $rarr as $realm ) {
-			$realms[$realm->getSlug()] = $realm->getName();	
-		}
 		$viewData = array(
 			'realms' => $realms,
 			'regions' => array("US", "CN", "EU", "KR" , "TW" )

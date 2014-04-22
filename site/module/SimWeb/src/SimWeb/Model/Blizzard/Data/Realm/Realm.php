@@ -1,6 +1,6 @@
 <?php
 
-namespace SimWeb\Model\Realm;
+namespace SimWeb\Model\Blizzard\Data\Realm;
  
 class Realm {
 	

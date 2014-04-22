@@ -1,6 +1,6 @@
 <?php
 
-namespace SimWeb\Model\Common;
+namespace SimWeb\Model\Blizzard\Data\Common;
  
 class Stat {
 	

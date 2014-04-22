@@ -15,5 +15,9 @@ class Simulation {
 	public function getDPS() {
 		return (int) $this->raw['Player']['DPS']['value'];
 	}
+	
+	public function getRaw() {
+		return $this->raw;	
+	}
 		
 }

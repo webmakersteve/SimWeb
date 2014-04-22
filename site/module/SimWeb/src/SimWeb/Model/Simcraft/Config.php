@@ -2,7 +2,7 @@
 
 namespace SimWeb\Model\Simcraft;
 
-use SimWeb\Model\Character\Character;
+use SimWeb\Model\Blizzard\Data\Character\Character;
 
 class Config {
 	

@@ -1,16 +1,13 @@
 <?php
 
-namespace SimWeb\Model\Character;
+namespace SimWeb\Model\Blizzard\Data\Character;
  
 use SimWeb\Service\BlizzAPI;
-use SimWeb\Model\Item\Equipment;
-use SimWeb\Model\Character\Specialization;
+use SimWeb\Model\Blizzard\Data\Item\Equipment;
+
+use SimWeb\Model\Simcraft\Config as SimConfig;
  
 class Character {
-	
-	protected function exchange($data) {
-			
-	}
 	
 	public function __construct( $data = NULL) {
 		if ($data !== NULL) $this->exchange($data);
@@ -24,7 +21,7 @@ class Character {
 	protected $inactiveSpec;
 	protected $equipment;
 	
-	public function exchangeArray( $Data ) {
+	public function Exchange( $Data ) {
 		
 		$this->name = isset($Data['Name']) ? $Data['Name'] : NULL;
 		$this->realm = isset($Data['Realm']) ? $Data['Realm'] : NULL;
@@ -56,18 +53,6 @@ class Character {
 		}
 		
 		return $this;
-	}
-	
-	public function Fetch(  ) {
-		$armory = new BlizzAPI();
-		try {
-			if ($this->URL) $CharData = $armory->getCharacter( $this->URL );
-			else $CharData = $armory->getCharacter( $this->realm, $this->name );
-			return $this->exchangeArray($CharData);
-		} catch (\Exception $e) {
-			throw $e;
-		}
-		
 	}
 	
 	public function getLink() {return $this->URL; }
@@ -163,6 +148,12 @@ class Character {
 	
 	public function getSimProfsStr() {
 		return "";	
+	}
+	
+	public function getSimConfig() {
+		$x = new SimConfig();
+		$x->importCharacter($this);
+		return $x;
 	}
 	
 }

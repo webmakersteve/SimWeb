@@ -1,6 +1,6 @@
 <?php
 
-namespace SimWeb\Service;
+namespace SimWeb\Model\Common;
 
 use Zend\ServiceManager\ServiceLocatorInterface,
 	Zend\ServiceManager\ServiceLocatorAwareInterface;

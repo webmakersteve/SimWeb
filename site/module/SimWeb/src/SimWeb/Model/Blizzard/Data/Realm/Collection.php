@@ -1,23 +1,26 @@
 <?php
 
-namespace SimWeb\Model\Realm;
+namespace SimWeb\Model\Blizzard\Data\Realm;
  
 use SimWeb\Model\ServiceAwareModel;
 use SimWeb\Service\BlizzAPI as BlizzAPI;
 
-use SimWeb\Model\Realm\Realm;
+use SimWeb\Model\Common\Cacheable;
 
 use Zend\Cache\StorageFactory;
 
-class Collection extends ServiceAwareModel {
+class Collection extends Cacheable  {
 
 	protected $realms = NULL;
 	protected $map = array(),
 			  $slugMap = array();
 	
 	public function toArray() {
-		$this->Fetch();
 		return $this->realms;
+	}
+	
+	public function toAssocArray() {
+		return $this->map;	
 	}
 	
 	private function getCache() {
@@ -32,39 +35,21 @@ class Collection extends ServiceAwareModel {
 		return $cache;	
 	}
 	
-	public function Fetch() {
-		if ($this->realms !== NULL) return;
-		$cache = $this->getCache();
-		//now we check the cache
-		$cached = $cache->getItem( 'realmList', $success);
+	public function Exchange($Data) {
+			
+		$this->realms = array();
 		
-		if (!$success) {
-			$s = new BlizzAPI();
-			$realms = $s->getRealms();
-			
-			$this->realms = array();
-			
-			foreach( $realms as $realm ) {
-				$r = new Realm();
-				$r->exchange($realm);
-				$this->realms[] = $r;
-				$this->map[$r->getSlug()] = $r->getName();
-				$this->slugMap[] = $r->getSlug();
-			}
-			
-			$cache->SetItem( 'realmList', serialize($this));
-		} else {
-			$r = unserialize($cached);
-			list($this->realms,
-				$this->map,
-				$this->slugMap) = $r->export();
-			unset($r);
+		foreach( $Data as $realm ) {
+			$r = new Realm();
+			$r->exchange($realm);
+			$this->realms[] = $r;
+			$this->map[$r->getSlug()] = $r->getName();
+			$this->slugMap[] = $r->getSlug();
 		}
 		
 	}
 	
 	public function getRealm( $name, $slug=FALSE ) {
-		$this->Fetch();
 		if ($slug) {
 			//this is the easiest since they are stored by slug
 			if ($key = array_search($name, $this->slugMap)) {

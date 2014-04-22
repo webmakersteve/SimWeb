@@ -1,6 +1,6 @@
 <?php
 
-namespace SimWeb\Service;
+namespace SimWeb\Model\Simcraft;
 
 use	Zend\ServiceManager\InitializerInterface,
 	Zend\ServiceManager\ServiceLocatorInterface;
@@ -9,7 +9,7 @@ use	Zend\ServiceManager\InitializerInterface,
 use SimWeb\Model\Character\Character,
     SimWeb\Model\Simcraft\Config as SimConfig;
 
-class Simulator extends Service  {
+class Simulator {
 	
 	protected $config;
 	
@@ -74,8 +74,9 @@ class Simulator extends Service  {
 				'Actions' => NULL
 			)
 		);
-		
-		return $data;
+		$s = new Simulation();
+		$s->importSimulationArray( $data );
+		return $s;
 		
 	}
 	
